@@ -1,0 +1,58 @@
+//Header
+header.container-fluid
+	//info
+	div.row.azul-oscuro
+		div.col-lg-2.col-md-2.col-sm-2.col-xs-12
+		
+			p ENVÍO GRATIS + $25.000
+
+
+		div.col-lg-2.col-md-2.col-sm-2.col-lg-offset-8.col-md-offset-8.col-sm-offset-8.hidden-xs
+			p ENVÍOS A TODO COLOMBIA
+
+	///-info	
+
+	//Mi cuenta y Carrito
+	div.row
+		//Logo 
+		div.col-lg-1.col-md-1.col-sm-1.col-xs-6
+			if titulo == "Home"
+
+				h1.logo
+					img.img-responsive(src="images/logo-blanco.png", alt="Durex Love Sex", title="Durex Love Sex")
+
+			else
+				div.logo
+					img.img-responsive(src="images/logo-blanco.png", alt="Durex Love Sex", title="Durex Love Sex")
+
+
+		///-Logo 
+			
+
+
+		div.col-lg-2.col-md-2.col-sm-2.col-xs-6
+			
+			div.perfil.
+				<i icon="icon icon-profile"></i><a href="#">MI CUENTA</a> |
+
+			div.carrito
+
+				div.cart
+					span.cantidad
+					span.icon.icon-cart
+
+				span Carro
+
+			//menu
+			include menu.jade
+			///-menu
+
+
+	///-Mi cuenta y Carrito
+
+
+
+	
+
+
+///-Header

@@ -1,0 +1,70 @@
+extends partials/base.jade
+
+block title
+	-var titulo = "Home";
+	title Durex Love Sex - Tienda Online
+
+block content
+	section.container-fluid
+
+		div#carrusel-ppal.carousel.slide(data-ride="carousel")
+
+			//bullets
+			ol.carousel-indicators
+				li.active(data-target="#carrusel-ppal", data-slide-to="0" )
+				li(data-target="#carrusel-ppal", data-slide-to="1" )
+				li(data-target="#carrusel-ppal", data-slide-to="2" )
+
+			//wrapper 
+			div.carousel-inner(role="listbox")
+
+				//item
+				div.item.active
+					img(src="images/sample-banner-1.jpg", alt="Ejemplo de ALT", title="Ejemplo de Title")
+
+					div.carousel-caption
+						
+						h2 Cada tacto se siente más real con Durex
+
+						p: a.btn.btn-primary.btn-lg(href="#", role="button") Ver Más
+
+
+						img.producto(src="images/sample-banner-producto", alt="")
+
+				//item
+
+		section.row.row-productos
+			
+			//Condones
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				img.img-responsive(src="images/categoria-condones.png", alt="Condones", title="Condones")
+
+				h3 Condones
+
+
+			///-Condones
+
+			//lubricantes
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				img.img-responsive(src="images/categoria-lubricantes.png", alt="Lubricantes", title="Lubricantes")
+				h3 Lubricantes
+			///-lubricantes
+
+			//Anillos			
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				img.img-responsive(src="images/categoria-anillos.png", alt="Anillos", title="Anillos")
+				h3 Anillos
+			///-Anillos
+			
+
+			//Kits de placer
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				img.img-responsive(src="images/categoria-kits.png", alt="Kits de placer", title="Kits de placer")
+				h3 Kits de placer
+			///-Kits de placer
+		
+
+
+		
+	
+block Scripts

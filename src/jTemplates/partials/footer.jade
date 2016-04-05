@@ -1,0 +1,25 @@
+//Footer
+footer.container-fluid
+	div.logo
+		img.img-responsive(src="images/logo-azul.png", alt="Durex Love Sex", title="Durex Love Sex")
+	
+	div.row
+
+		div.col-lg-8.col-lg-offset-8.col-md-8.col-lg-offset-2.col-md-offset-2.col-sm-offset-2
+			p.text-center.
+				<a href="#">Términos y condiciones</a>            <a href="">Política de privacidad</a>            <a href="#">Envío y Devoluciones</a>         <a href="#">Preguntas Frecuentes</a>         <a href="#">Contacto</a>
+
+
+///-Footer
+
+//Scripts
+//-Estos son los scripts que van en todos los htmls del desarrollo
+if debug == true
+	script(src='js/libs/jquery.js')
+	script(src='js/libs/bootstrap.min.js')
+	script(src='js/tienda-durex.ini.js')
+
+else
+	script(src="js/libs.tienda-durex.min.js")
+	script(src='js/tienda-durex.ini.js')
+

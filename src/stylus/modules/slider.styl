@@ -1,0 +1,86 @@
+.bx
+	&-viewport
+		background none !important
+		border 0 !important
+		box-shadow none !important
+		
+	&-wrapper
+		
+		.bx-controls-direction
+			a
+				z-index 10
+				
+		.bx-next, .bx-prev
+			background none !important
+			display block
+			position absolute
+			text-indent 0 !important
+			top 1rem
+			transitionBase(0.3s)
+			
+			&:before
+				path('arrows.svg')
+				content ''
+				background-size 200%
+				display block
+				height 2.3rem
+				width @height
+				
+
+		.bx-next
+			right 1rem
+			&:before
+				background-position right
+				
+		.bx-left
+			left 1rem
+				
+
+
+.destacado
+	margin-bottom 1rem
+	.nombre-usuario
+		color #fff
+		font-size 2rem
+		font-weight $Bold
+		line-height 1rem
+		
+		
+	.perfil
+		border-radius 5px
+		display block
+		margin 1rem auto
+		max-width 6rem
+		
+	.at-usuario
+		color #8899a6
+		font-size 1.4rem
+		font-weight $Light
+
+	.txt
+		background none !important
+		font-size 1.9rem
+
+.tweets
+	text-align center
+	.nombre-usuario
+		color #fff
+		font-size 2rem
+		font-weight $Bold
+		line-height 1rem
+		
+		
+	.perfil
+		border-radius 5px
+		display block
+		margin 1rem auto
+		max-width 6rem
+		
+	.at-usuario
+		color #8899a6
+		font-size 1.4rem
+		font-weight $Light
+
+	.txt
+		background none !important
+		font-size 1.9rem

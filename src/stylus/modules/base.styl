@@ -1,0 +1,52 @@
+::selection /* WebKit/Blink Browsers */
+	background $Azul
+	color #fff 
+
+::-moz-selection /* Gecko Browsers */
+	background $Azul
+	color #fff
+	
+
+::-webkit-file-upload-button
+	cursor pointer
+
+a
+	color $Amarillo
+	transitionBase(0.3s)
+	
+	&:hover
+		color lighten($Amarillo, 40%)
+		text-decoration underline
+
+body
+	background-color #000
+	path("bg.jpg")
+	background-position top center 
+	background-repeat no-repeat
+	background-size 100%
+	color #fff
+	font-family $Roboto
+	font-size 1.4rem
+	font-weight $Light 
+
+
+footer
+	background-color #000
+	border-top 1px solid #fff
+	padding 1rem
+	
+	a
+		color #fff
+
+
+h1,h2,h3,h4,h5,h6
+	font-family $Hammer
+
+header
+	background-color #000
+	border-bottom 1px solid #fff
+	padding 1rem
+
+strong
+	color $Azul
+	font-weight $Bold
