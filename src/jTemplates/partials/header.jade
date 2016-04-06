@@ -1,14 +1,15 @@
 //Header
 header.container-fluid
 	//info
-	div.row.azul-oscuro
-		div.col-lg-2.col-md-2.col-sm-2.col-xs-12
-		
-			p ENVÍO GRATIS + $25.000
+	div.azul-oscuro
+		div.row
+			div.col-lg-2.col-md-2.col-sm-2.col-xs-12
+			
+				p ENVÍO GRATIS + $25.000
 
 
-		div.col-lg-2.col-md-2.col-sm-2.col-lg-offset-8.col-md-offset-8.col-sm-offset-8.hidden-xs
-			p ENVÍOS A TODO COLOMBIA
+			div.col-lg-2.col-md-2.col-sm-2.col-lg-offset-8.col-md-offset-8.col-sm-offset-8.hidden-xs
+				p ENVÍOS A TODO COLOMBIA
 
 	///-info	
 
@@ -19,67 +20,71 @@ header.container-fluid
 			if titulo == "Home"
 
 				h1.logo
-					img.img-responsive(src="images/logo-blanco.png", alt="Durex Love Sex", title="Durex Love Sex")
+					a(href="index.html"): img.img-responsive(src="images/logo-blanco.png", alt="Durex Love Sex", title="Durex Love Sex")
 
 			else
 				div.logo
-					img.img-responsive(src="images/logo-blanco.png", alt="Durex Love Sex", title="Durex Love Sex")
+
+					a(href="index.html"): img.img-responsive(src="images/logo-blanco.png", alt="Durex Love Sex", title="Durex Love Sex")
 
 
 		///-Logo 
 			
 
 
-		div.col-lg-3.col-md-3.col-sm-3.col-xs-6
+		div.col-lg-7.col-md-7.col-sm-7.col-xs-6.col-lg-offset-4.col-md-offset-4.col-sm-offset-4
+			div.col-lg-4.col-md-4.co-xs-12.col-lg-offset-9.col-md-offset-9.col-sm-offset-9
+				div.perfil.
+					<i class="icon icon-cuenta"></i><a href="#">MI CUENTA</a> |
+
+				div.status-cart
+
+					div.cart
+						span.cantidad.badge 1
+						span.icon.icon-cart
+
+					span CARRO
+
+
+				div.mini-login.hidden
+					form#login(method="#")
+						//email
+						div.form-group
+							label(for="email") Correo electrónico
+							input.form-control(type="email", name="email", id="email")
+						///-email
+
+						//contraseña
+						div.form-group
+							label(for="pass") Contraseña
+							input.form-control(type="password", name="pass", id="pass")
+						///-contraseña
+
+						button.btn.btn-login(type="button") Iniciar sesión
+
+						a(href="#") ¿No tiene una cuenta?
+
+
+				div.mini-cart.hidden
+					-for(x = 0; x < 3; x++)
+						div.mini-producto
+							div.producto
+								img.img-responsive(src="images/producto-sample.png")
+
+							div.info
+								h3 Gel de Placer
+								p $99.999
+								a.remove(href="#", role="button"): i.icon.icon-trash
+
+					
+					a.btn.btn-cart(href="#", role="button") Carro
+					a.btn.btn-pay(href="#", role="button") Ir a pagar
 			
-			div.perfil.
-				<i icon="icon icon-profile"></i><a href="#">MI CUENTA</a> |
-
-			div.status-cart
-
-				div.cart
-					span.cantidad
-					span.icon.icon-cart
-
-				span Carro
-
-
-			div.mini-login.hidden
-				form#login(method="#")
-					//email
-					div.form-group
-						label(for="email") Correo electrónico
-						input.form-control(type="email", name="email", id="email")
-					///-email
-
-					//contraseña
-					div.form-group
-						label(for="pass") Contraseña
-						input.form-control(type="password", name="pass", id="pass")
-					///-contraseña
-
-					button.btn.btn-login(type="button") Iniciar sesión
-
-					a(href="#") ¿No tiene una cuenta?
-
-
-			div.mini-cart.hidden
-				-for(x = 0; x < 3; x++)
-					div.mini-producto
-						div.producto
-							img.img-responsive(src="images/producto-sample.png")
-
-						div.info
-							h3 Gel de Placer
-							p $99.999
-							a.remove(href="#", role="button"): i.icon.icon-trash
-
-				
-				a.btn.btn-cart(href="#", role="button") Carro
-				a.btn.btn-pay(href="#", role="button") Ir a pagar
+			
 
 			//menu
-			include menu.jade
+			div.col-lg-11.col-md-11.col-sm-11.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
+				include menu.jade
 			///-menu
 
 

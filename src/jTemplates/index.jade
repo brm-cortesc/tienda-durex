@@ -5,15 +5,9 @@ block title
 	title Durex Love Sex - Tienda Online
 
 block content
-	section.container-fluid
+	section.container-fluid.no-border
 
-		div#carrusel-ppal.carousel.slide(data-ride="carousel")
-
-			//bullets
-			ol.carousel-indicators
-				li.active(data-target="#carrusel-ppal", data-slide-to="0" )
-				li(data-target="#carrusel-ppal", data-slide-to="1" )
-				li(data-target="#carrusel-ppal", data-slide-to="2" )
+		div#carrusel-ppal.carousel(data-ride="carousel")
 
 			//wrapper 
 			div.carousel-inner(role="listbox")
@@ -24,43 +18,66 @@ block content
 
 					div.carousel-caption
 						
-						h2 Cada tacto se siente más real con Durex
+						div.txt
+							h2 Cada tacto se siente más real con Durex
 
-						p: a.btn.btn-primary.btn-lg(href="#", role="button") Ver Más
+							p.descripcion.
+								Verdadera sensación de la piel sobre la piel. No hay nada que 
+								se le parezca. Ahora cada toque se siente más real con Durex.
+
+							a.btn.btn-primary.btn-lg(href="#", role="button") Ver Más
 
 
 						img.producto(src="images/sample-banner-producto.png", alt="")
 
 				//item
 
+
+			//Controles
+
+			a.left.carousel-control(href="#carousel-example-generic" role="button" data-slide="prev").
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+
+			a.right.carousel-control(href="#carousel-example-generic" role="button" data-slide="next").
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+
+
+	section.container-fluid.no-border.bg-categorias
 		section.row.row-productos
+
+			h2.text-center NUESTROS PRODUCTOS
 			
 			//Condones
 			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
-				img.img-responsive(src="images/categoria-condones.png", alt="Condones", title="Condones")
+				a(href="#")
+					div.categoria.categoria-condones
 
-				h3 Condones
-
+					p Condones
 
 			///-Condones
 
 			//lubricantes
 			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
-				img.img-responsive(src="images/categoria-lubricantes.png", alt="Lubricantes", title="Lubricantes")
-				h3 Lubricantes
+				a(href="")
+					div.categoria.categoria-lubricantes
+					p Lubricantes
 			///-lubricantes
 
 			//Anillos			
 			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
-				img.img-responsive(src="images/categoria-anillos.png", alt="Anillos", title="Anillos")
-				h3 Anillos
+				a(href="")
+					div.categoria.categoria-anillos
+					p Anillos
 			///-Anillos
 			
 
 			//Kits de placer
 			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
-				img.img-responsive(src="images/categoria-kits.png", alt="Kits de placer", title="Kits de placer")
-				h3 Kits de placer
+				a 
+					div.categoria.categoria-kits
+					p Kits de placer
 			///-Kits de placer
 		
 

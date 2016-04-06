@@ -1,296 +1,31 @@
-.age-gate
-	path("bg-age-gate.jpg")	
+//categorias de producto home
 
-	h1
-		font-family $Hammer
-		font-size 3rem
-		font-weight $Bold
-		text-transform uppercase
-		
+.bg-categorias
+	path("bg-categorias.jpg")
+	background-size 100%
+	background-repeat no-repeat
+	background-position center
 
-	header
-		min-height 5rem
-		
-
-	.age-legal
-		margin-top 4rem
-		font-size 1rem
-		text-align center
-
-
-.bg-registro
-	h1
-		margin-bottom -4rem
-		margin-top -4rem
-		
-
-	.bottle
-		margin-left 17rem
-		position relative
-		z-index 0
-
-.bottle
-	animation-delay 1.5s
-
-.descripcion-actividad
-	font-size 1.6rem
-	margin 1rem auto
-	max-width 34rem
-	
-.destacado
-	margin-bottom 1rem
-	padding-bottom 7.1rem
-	.nombre-usuario
-		color #fff
-		font-size 2rem
-		font-weight $Bold
-		line-height 1rem
-		
-		
-	.perfil
-		border-radius 5px
-		display block
-		margin 1rem auto
-		max-width 6rem
-		
-	.at-usuario
-		color #8899a6
-		font-size 1.4rem
-		font-weight $Light
-
-	.txt
-		background none !important
-		font-size 1.9rem !important
-
-
-.other-tweets
-	
-	.tweet 
-		padding-bottom 3rem
-		padding-top 1rem !important
-		margin-bottom 1rem
-
-.scroll
-	bottom 16%
-	cursor pointer
-	left 48%
-	position absolute
-	text-align center
-	width 5rem
-	z-index 5
-
-.spotlights
-	height 100%
-	pointer-events none
-	position absolute	
-	top 0
+.categoria
+	path('categorias.png')
+	background-repeat no-repeat
+	display block
+	height 21.5rem
+	margin 0 auto
+	max-width 100%
+	transitionBase(0.2s)
 	width @height
-	z-index -2
-	
-
-	.spot
-		animation spot 2s ease-in-out infinite alternate
-		position absolute
-		
-		&-amarillo-1
-			animation-delay 0.2s
-			background radial-gradient(ellipse at center, rgba(#fff,1) 5%,rgba($Amarillo,0.2) 25%)
-			border-radius 100%
-			height 5rem
-			left 14.4%
-			top 31.5%
-			width @height
-			
-		&-amarillo-2
-			animation-delay 0.8s
-			background radial-gradient(ellipse at center, rgba(#fff,1) 5%,rgba($Amarillo,0.2) 25%)
-			border-radius 100%
-			height 5rem
-			right 3%
-			top 44%
-			width @height
-			
-
-		&-purpura-1
-			animation-delay 1.2s
-			background radial-gradient(ellipse at center, rgba(#fff,1) 5%,rgba($Purpura,0.3) 25%)
-			border-radius 100%
-			height 5rem
-			right 16%
-			top 15%
-			width @height
-			
-		&-verde-1
-			animation-delay 1.5s
-			background radial-gradient(ellipse at center, rgba(#fff,1) 5%,rgba($Verde,0.3) 25%)
-			border-radius 100%
-			height 5rem
-			right 9%
-			top 31%
-			width @height
-				
-
-.smoke-back
-	animation smoke 5s ease-in-out infinite alternate
-	animation-delay 0.2s
-	path("smoke-back.png")
-	background-repeat no-repeat
-	background-size 100%
-	bottom 0
-	height 74%
-	pointer-events none
-	position absolute
-	width 100%
-	z-index -1
-	
 
 	
-.smoke-front
-	animation smoke 5s ease-in-out infinite alternate
-	animation-delay 1s
-	path("smoke-front.png")
-	background-repeat no-repeat
-	background-size 100%
-	bottom 0
-	height 52%
-	left 10%
-	pointer-events none
-	position absolute
-	width 70%
-	z-index 4
-	
-	.smoky
-		animation-delay 0.6s
-	
-
-.smoky
-	animation destellos 500s linear infinite
-	path("smoke-ease.png")
-	background-position top center	
-	background-repeat repeat
-	bottom 0
-	display block
-	height 83%
-	left 0
-	position absolute
-	right 0
-	top 0
-	width 100%
-	
-
-
-.triangulos
-	font-family $Hammer
-	font-size 2rem
-	margin-bottom 4rem
-	padding 0 4.5rem
-	position relative
-	text-align center
-	text-transform uppercase
-	
-	&:after, &:before
-		path('triangle.png')
-		background-repeat no-repeat
-		background-size 100%
-		content ''
-		display block
-		height 7rem
-		position absolute
-		top 0%
-		width @height
-		z-index 6
+	&-anillos
+		background-position center left
 		
-
-	&:after
-		left -4rem
+	&-condones
+		background-position center right
 		
-	&:before
-		right -4rem
+	&-lubricantes
+		background-position -430px top
 		
-	strong
-		color $Amarillo
+	&-kits
+		background-position -215px top
 		
-.tweet
-	path('bg-widgets.jpg')
-	background-size 200%
-	background-repeat no-repeat
-	background-position 0 0
-	display block
-	
-	&-bg-1
-		background-position 100% 0 !important
-	
-	
-	&-bg-2
-		background-position 100% 33% !important
-		
-	&-bg-3
-		background-position 100% 66% !important
-	
-	&-bg-4
-		background-position 0% 66% !important
-		
-	&-bg-5
-		background-position 0% 100% !important
-
-	&-enviar
-		padding-bottom 4.7rem
-		padding-left 13rem !important
-		padding-right 2rem !important
-		text-align center
-		h3
-			font-family $Roboto
-			font-size 1.8rem
-			font-weight $Light
-			margin-top 0
-			padding-top 5rem
-			
-			&:after
-				color #fff
-				content "\e252"
-				font-family $Icon
-				text-align center
-				display block
-				margin 0 auto
-
-
-	&-mostrar
-		background-position 100% 0
-		padding-top 3rem
-		padding-left 2rem
-		padding-right 2rem
-		
-		.icon
-			margin 0 auto
-			
-
-
-.tweets
-	text-align center
-		
-	.nombre-usuario
-		color #fff
-		font-size 2rem
-		font-weight $Bold
-		line-height 1rem
-		
-		
-	.perfil
-		border-radius 5px
-		display inline-block
-		margin-top 1rem
-		max-width 6rem
-		vertical-align top
-		
-	.at-usuario
-		color #8899a6
-		font-size 1.4rem
-		font-weight $Light
-
-	.txt
-		background none !important
-		font-size 1.6rem
-	
-	.user
-		display inline-block
-		vertical-align top
