@@ -12,7 +12,51 @@
 	.btn
 		margin-left 1rem	
 		margin-right @margin-left
+	
+
+.cart-totales
+	background $AzulOscuro
+	background linear-gradient(to right, $AzulClaro 0%, $AzulOscuro 100%)
+	border-radius 5px
+	padding 2rem
+	color #fff
+	
+	h2, h3
+		color #fff
+		font-family $AvenirL
+		text-transform uppercase
+		margin 0
+	
+	h2,
+		font-size 3rem
 		
+	h3
+		font-size 1.5rem	
+	
+	hr
+		margin-bottom 1rem
+		margin-top @margin-bottom
+		width 100%
+		
+
+	.col-lg-6
+		&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+			margin 1rem 0
+		
+
+	.valor
+		text-align right
+		
+		p
+			font-size 1.5rem
+		
+		&-total
+			p
+				font-family $AvenirH
+				font-size 3rem
+		
+	
+
 .categoria
 	path('categorias.png')
 	background-repeat no-repeat
@@ -97,6 +141,51 @@
 	&-bread
 		padding 0
 		
+
+
+.producto
+	border-bottom 2px solid transparent
+	border-top @border-bottom
+	padding 1rem
+	margin-bottom 3rem
+	transitionBase(0.3s)
+	
+	&:hover
+		border-bottom-color $Gris
+		border-top-color @border-bottom-color
+	
+	.info, .img-responsive
+		display inline-block
+		vertical-align top
+		
+	.info
+		h3
+			color #000
+			font-family $AvenirR
+			margin-bottom 0
+			margin-top 0
+			
+		.precio
+			color $AzulOscuro
+			font-size 2.4rem
+			margin-top 3rem
+			
+			&:before
+				left 0
+				top -0.7rem
+				
+		.remove
+			color #000
+			display block
+			font-size 2.9rem
+			margin-top 2rem
+			
+
+			&:active, &:focus, &:hover
+				text-decoration none
+
+	.img-responsive
+		width 40%
 
 .recomendado
 	box-shadow 1px 3px 4px 4px rgba(0,0,0,0.15)

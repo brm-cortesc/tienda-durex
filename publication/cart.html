@@ -124,38 +124,38 @@
     
   </header>
   <!--/-Header-->
-  <section class="container-fluid">
-    <div class="head">
-      <div class="row">
-        <ol class="breadcrumb">
-          <li><a href="index.html">Inicio</a></li>
-          <li class="active">Carro</li>
-        </ol>
-      </div>
+  <div class="head head-bread">
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="active">Carro</li>
+      </ol>
     </div>
+  </div>
+  <section class="container-fluid">
     <div class="row row-cart">
       <h1>Tu Carro</h1>
       <!--lista de compras-->
       <section class="div-col-lg-5 col-md-5 col-sm-5 col-xs-12">
-        <article class="producto"><img src="images/product-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive">
+        <article class="producto"><img src="images/producto-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive">
           <div class="info">
             <h3>Durex Placer Prolongado</h3><small>Contienen 5% de benzocaína</small>
             <p class="precio">$99.999</p><a href="#" role="button" class="remove"><i class="icon icon-trash"></i></a>
           </div>
         </article>
-        <article class="producto"><img src="images/product-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive">
+        <article class="producto"><img src="images/producto-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive">
           <div class="info">
             <h3>Durex Placer Prolongado</h3><small>Contienen 5% de benzocaína</small>
             <p class="precio">$99.999</p><a href="#" role="button" class="remove"><i class="icon icon-trash"></i></a>
           </div>
         </article>
-        <article class="producto"><img src="images/product-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive">
+        <article class="producto"><img src="images/producto-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive">
           <div class="info">
             <h3>Durex Placer Prolongado</h3><small>Contienen 5% de benzocaína</small>
             <p class="precio">$99.999</p><a href="#" role="button" class="remove"><i class="icon icon-trash"></i></a>
           </div>
         </article>
-        <article class="producto"><img src="images/product-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive">
+        <article class="producto"><img src="images/producto-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive">
           <div class="info">
             <h3>Durex Placer Prolongado</h3><small>Contienen 5% de benzocaína</small>
             <p class="precio">$99.999</p><a href="#" role="button" class="remove"><i class="icon icon-trash"></i></a>
@@ -165,16 +165,25 @@
       <!--/-lista de compras-->
       <!--total-->
       <section class="div-col-lg-5 col-md-5 col-sm-5 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-        <article class="totales">
-          <div class="texto">
-            <h3>SUBTOTAL                                                        </h3>
-            <h3>ENVÍO                                                                </h3>
-            <h3>TOTAL  </h3>
+        <article class="cart-totales">
+          <div class="col-lg-6 col-md-6 col-sm-xs-6 texto">
+            <h3>subtotal                                                        </h3>
           </div>
-          <div class="valores">
+          <div class="col-lg-6 col-md-6 col-sm-xs-6 valor valor-subtotal">
             <p>$21.300</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-xs-6 texto">
+            <h3>envío                                                        </h3>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-xs-6 valor valor-envio">
             <p>$7.300</p>
-            <p class="valor-total">$28.400</p>
+          </div>
+          <hr>
+          <div class="col-lg-6 col-md-6 col-sm-xs-6 texto">
+            <h2>total                                                        </h2>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-xs-6 valor valor-total">
+            <p>$28.400</p>
           </div><img src="images/medios-pago.png" class="img-responsive">
         </article><a href="#" class="btn btn-checkout">Ir al checkout</a>
       </section>

@@ -5,14 +5,14 @@ block title
 	title Durex Love Sex - Tienda Online
 
 block content
+	div.head.head-bread
+
+		div.row
+			ol.breadcrumb
+				li: a(href="index.html") Inicio
+				li.active Carro
 	section.container-fluid
 
-		div.head
-
-			div.row
-				ol.breadcrumb
-					li: a(href="index.html") Inicio
-					li.active Carro
 
 		div.row.row-cart
 			h1 Tu Carro
@@ -22,7 +22,7 @@ block content
 			section.div-col-lg-5.col-md-5.col-sm-5.col-xs-12
 				-for(x =0; x < 4; x++)
 					article.producto
-						img.img-responsive(src="images/product-sample.jpg", alt="Durex Placer Prolongado", title="Durex Placer Prolongado")
+						img.img-responsive(src="images/producto-sample.jpg", alt="Durex Placer Prolongado", title="Durex Placer Prolongado")
 
 						
 						div.info
@@ -35,17 +35,23 @@ block content
 			
 			//total
 			section.div-col-lg-5.col-md-5.col-sm-5.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
-				article.totales
-					div.texto
-						h3 SUBTOTAL                                                        
-						h3 ENVÍO                                                                
-
-						h3 TOTAL  
-
-					div.valores
+				article.cart-totales
+					div.col-lg-6.col-md-6.col-sm-xs-6.texto
+						h3 subtotal                                                        
+					div.col-lg-6.col-md-6.col-sm-xs-6.valor.valor-subtotal
 						p $21.300
+
+					div.col-lg-6.col-md-6.col-sm-xs-6.texto
+						h3 envío                                                        
+					div.col-lg-6.col-md-6.col-sm-xs-6.valor.valor-envio
 						p $7.300
-						p.valor-total $28.400
+					
+					hr.
+
+					div.col-lg-6.col-md-6.col-sm-xs-6.texto
+						h2 total                                                        
+					div.col-lg-6.col-md-6.col-sm-xs-6.valor.valor-total
+						p $28.400
 
 					img.img-responsive(src="images/medios-pago.png")
 
