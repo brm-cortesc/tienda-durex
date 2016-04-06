@@ -1,0 +1,231 @@
+extends partials/base.jade
+
+block title
+	-var titulo = "Mi cuenta";
+	title Durex Love Sex - Tienda Online
+
+block content
+	section.container-fluid
+		div.head
+			
+			h2.
+				hola
+				<span class="nombre-usuario">Daniela</span>
+
+
+		article.row.row-cuenta
+
+			//Navegacion cuenta
+			div.col-lg-2.col-md-2.col-sm-2.col-xs-12
+				button.btn.btn-perfil(type="button").
+					<i class="icon icon-perfil"></i>
+					<p>
+						<strong>Mi</strong> Perfil
+					</p>
+				button.btn.btn-preferencias(type="button").
+					<i class="icon icon-preferencias"></i>
+					<p>
+						<strong>Mis</strong> Preferencias
+					</p>
+				button.btn.btn-suscripcion(type="button").
+					<i class="icon icon-suscripcion"></i>
+					<p>
+						<strong>Mi</strong> Suscripcion
+					</p>
+				button.btn.btn-ordenes(type="button").
+					<i class="icon icon-ordenes"></i>
+					<p>
+						<strong>Mis</strong> Ordenes
+					</p>
+			///-Navegacion cuenta
+
+
+			//formularios
+			div.col-lg-5.col-md-5.col-sm-5.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
+				
+				//Datos personales
+				form#datos-personales
+					
+
+					div.datos.datos-personales
+						
+						//Nombre
+						div.form-group
+							label(for="nombre") Nombre
+							input.form-control(type="text", name="nombre", id="nombre")
+						///-Nombre
+
+						//Apellidos
+						div.form-group
+							label(for="apellidos") Apellidos
+							input.form-control(type="text", name="apellidos", id="apellidos")
+						///-Apellidos
+
+						//Celular
+						div.form-group
+							label(for="celular") Celular
+							input.form-control(type="text", name="celular", id="celular")
+						///-Celular
+
+						//Telefono
+						div.form-group
+							label(for="telefono") Teléfono
+							input.form-control(type="text", name="telefono", id="telefono")
+						///-Telefono
+
+
+						//email
+						div.form-group
+							label(for="email") Email
+							input.form-control(type="email", name="email", id="email")
+						///-email
+
+
+
+						button.btn.btn-update-persona(type="button") Registrarse
+
+
+					div.datos.datos-seguridad
+
+						//actual contraseña
+						div.form-group
+							label(for="password") Contraseña Actual
+							input.form-control(type="password", name="apassword", id="apassword")
+						///-actual contraseña
+
+						//nueva contraseña
+						div.form-group
+							label(for="password") Contraseña
+							input.form-control(type="password", name="password", id="password")
+						///-nueva contraseña
+
+						//Confirmar contraseña
+						div.form-group
+							label(for="cpassword") Confirmar Contraseña
+							input.form-control(type="password", name="cpassword", id="cpassword")
+						///-Confirmar contraseña
+						button.btn.btn-update-pass(type="button") Registrarse
+				///-Datos personales
+				//Preferencias
+				form#preferencias
+
+					div.datos.datos-notificaciones
+						h2 Notificaciones
+						//SMS
+						div.checkbox
+							input(type="checkbox", name="sms", value="sms")
+							label(for="sms") SMS de todas las notificaciones.
+						///-SMS
+
+						//resumen de ordenes
+						div.checkbox
+							input(type="checkbox", name="resumen", value="resumen")
+							label(for="resumen") Mail con resumen de ordenes.
+						///-resumen de ordenes
+
+						//status de ordenes
+						div.checkbox
+							input(type="checkbox", name="status", value="status")
+							label(for="status") Mail de status de ordenes.
+						///-status de ordenes
+
+						//despacho
+						div.checkbox
+							input(type="checkbox", name="despacho", value="despacho")
+							label(for="despacho") Mail con la confirmación mensual del despacho de su suscripción.
+						///-despacho
+
+						//suscripcion
+						div.checkbox
+							input(type="checkbox", name="suscripcion", value="suscripcion")
+							label(for="suscripcion") Mail de status de suscripción mensual.
+						///-suscripcion
+
+					div.datos.datos-news
+						h2 Newsletter
+
+						//lanzamiento
+						div.checkbox
+							input(type="checkbox", name="lanzamiento", value="lanzamiento")
+							label(for="lanzamiento") Lanzamiento de nuevos productos.
+						///-lanzamiento
+
+						//ofertas
+						div.checkbox
+							input(type="checkbox", name="ofertas", value="ofertas")
+							label(for="ofertas") Ofertas y noticias exclusivas.
+						///-ofertas
+				
+				//suscripcion	
+				div.datos.datos-sucripcion
+					
+					div.suscripcion
+						div.status.status-active
+							h3 Activada
+						
+						div.row
+							//Tipo de suscripcion
+							div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+								p Tipo de suscripción
+
+								h2 Oro
+							///-Tipo de suscripcion
+
+							//valor de suscripcion
+							div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+								p Valor de suscripción
+
+								h2 $99.999
+							///-valor de suscripcion
+
+							//pago
+							div.col-lg-3.col-md-3.col-sm-3.col-xs-12
+								p Método de pago
+
+								h2.tarjeta.tarjeta-visa 99.999
+							///-pago
+
+							//controls
+							div.col-lg-3.col-md-3.col-sm-3.col-xs-12.controls
+								p.
+									<a class="modificar-suscripcion" href="#">MODIFICAR</a>   |   <a class="pausar-suscripcion" href="#">PAUSAR</a>
+							///-controls
+				///-suscripcion	
+				
+
+				div.datos.datos-ordenes
+
+					-for(x = 0; x < 4;x++)
+						div.table-responsive
+							table.table
+								tr.info
+									td ORDEN #13578 | 12/06/16
+
+								th
+									td SKU
+									td Nombre
+									td(colspan="2") Valor
+
+								tr
+
+									td 34534345
+									td Combo Durex
+									td $14.500
+									td.total(rowspan="2").
+										<p>TOTAL</p>
+										<p class="valor">$45.600</p>
+										<p class="descarga">DESCARGAR FACTURA</p>
+
+								tr
+									td 35434345   
+									td Caja Durex
+									td $9.500
+
+
+
+			///-formularios
+
+
+
+	
+block Scripts
