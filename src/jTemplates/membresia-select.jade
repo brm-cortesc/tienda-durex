@@ -1,0 +1,114 @@
+extends partials/base.jade
+
+block title
+	-var titulo = "Membresia - Select";
+	title Durex Love Sex - Tienda Online
+
+block content
+	section.container-fluid
+		div.head
+			
+			h1 Selecciona la membresia
+
+
+		div.row.row-select-membresia
+
+			//Plata
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				
+				i.select
+				h2 Plata
+
+				p.membresia-precio $16.000
+
+				img.img-responsive(src="images/membresia-plata.png")
+				
+				p.membresia-desc 6 Condones
+
+				div.membresia-condones.hidden
+
+					h3 Selecciona los condones y cantidades
+
+					-for(x =0; x < 6; x++)
+						div.condon
+							img(src="images/condon.png")
+							span.badge #{x}
+
+			///-Plata
+
+			//Oro
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				
+				i.select
+				h2 Oro
+
+				p.membresia-precio $23.000
+
+				img.img-responsive(src="images/membresia-oro.png")
+				
+				p.membresia-desc 8 Condones
+				p.membresia-desc 1 Lubricante
+
+				div.membresia-condones.hidden
+
+					h3 Selecciona los condones y cantidades
+
+					-for(y =0; y < 6; y++)
+						div.condon
+							img(src="images/condon.png")
+							span.badge #{y}
+
+			///-Oro
+
+			//Rodio
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				i.select
+				h2 Rodio
+
+				p.membresia-precio $47.000
+
+				img.img-responsive(src="images/membresia-rodio.png")
+				
+				p.membresia-desc 16 Condones
+				p.membresia-desc 2 Lubricantes
+
+				div.membresia-condones.hidden
+
+					h3 Selecciona los condones y cantidades
+
+					-for(z =0; z < 6; z++)
+						div.condon
+							img(src="images/condon.png")
+							span.badge #{z}
+
+			///-Rodio
+
+			//Diamante
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
+				i.select
+				h2 Diamante
+
+				p.membresia-precio $60.000
+
+				img.img-responsive(src="images/membresia-diamante.png")
+				
+				p.membresia-desc 16 Condones
+				p.membresia-desc 2 Lubricantes
+				p.membresia-desc 1 Anillo
+
+				div.membresia-condones.hidden
+
+					h3 Selecciona los condones y cantidades
+
+					-for(a =0; a < 6; a++)
+						div.condon
+							img(src="images/condon.png")
+							span.badge #{a}
+			///-Diamante
+		
+		div.row.azul-oscuro
+			a.btn.btn-go-checkout(href="#").
+				IR AL CHECKOUT <i class="icon icon-go"></i>
+
+	
+block Scripts

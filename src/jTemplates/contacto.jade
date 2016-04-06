@@ -1,0 +1,46 @@
+extends partials/base.jade
+
+block title
+	-var titulo = "Contacto";
+	title Durex Love Sex - Tienda Online
+
+block content
+	section.container-fluid
+		div.head
+			
+			h1 Contacto
+
+
+		article.row.row-contacto
+
+			form#contacto(method="#")
+				h2 Formulario de contacto
+
+				//Nombre
+				div.form-group
+					label(for="nombre") Nombre
+					input.form-control(type="text", name="nombre", id="nombre")
+				///-Nombre
+
+				//email
+				div.form-group
+					label(for="email") Correo Electrónico
+					input.form-control(type="email", name="email", id="email")
+				///-email
+
+				//phone
+				div.form-group
+					label(for="phone") Teléfono
+					input.form-control(type="text", name="phone", id="phone")
+				///-phone
+
+				//mensaje
+				div.form-group
+					label(for="mensaje") Mensaje
+					textarea.form-control(name="mensaje", id="mensaje", rows="1")
+				///-mensaje
+
+				button.btn.btn-submit-contact(type="button") Enviar
+
+	
+block Scripts
