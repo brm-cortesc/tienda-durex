@@ -1,0 +1,72 @@
+extends partials/base.jade
+
+block title
+	-var titulo = "Legal";
+	title Durex Love Sex - Tienda Online
+
+block content
+	section.container-fluid
+
+		div.hero
+			div.row
+
+				div.col-lg-6.col-md-6.col-sm-6.col-xs-12
+					img.img-responsive(src="images/productos-hero.png")
+
+				div.col-lg-6.col-md-6.col-sm-6.col-xs-12
+					h1 PLACER SIN PREOCUPACIONES
+
+					p.
+						Nunca más tendrás que ir a la farmacia a las 3 de la mañana, 
+						gracias a la membresia Durex recibe mensualmente tus 
+						productos favoritos.
+
+					a.btn.btn-ir(href="#") INICIAR MEMBRESIA
+
+
+		div.row.row-membresia-intro
+			//Confidencial
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.confidencial
+				h2.
+					<i class="icon icon-confidencial"></i>
+					Confidencial
+
+				p.
+					Todos tus pedidos llegaran en extricta 
+					confidencialidad, sin nadie conocer el 
+					contenido del paquete.
+
+
+			///-Confidencial
+
+			//a tu medida
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.medida
+				h2.
+					<i class="icon icon-medida"></i>
+					a tu medida
+
+				p.
+					Selecciona los intervalos de fecha,tipo
+					de condon durex y la cantidad de
+					anillos o lubricantes que desees.
+			///-a tu medida
+
+			//mejor precio
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.mejor-precio
+				
+				h2.
+					<i class="icon icon-tag"></i>
+					Mejor precio
+
+				p.
+					En nuestra membresia todos nuestros
+					productos están siempre con el 25%
+					de descuento.
+
+			///-mejor precio
+
+			
+
+		
+	
+block Scripts

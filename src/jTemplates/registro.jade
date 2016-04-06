@@ -1,0 +1,77 @@
+extends partials/base.jade
+
+block title
+	-var titulo = "Registro";
+	title Durex Love Sex - Tienda Online
+
+block content
+	section.container-fluid
+
+		div.head
+			
+			h1 Crear cuenta
+
+		div.row.row-registro
+			article.col-lg-6.col-md-6.col-sm-6.col-xs-12
+				h2 Datos Personales
+
+				form#registro(method="")
+					//Nombre
+					div.form-group
+						label(for="nombre") Nombre
+						input.form-control(type="text", name="nombre", id="nombre")
+					///-Nombre
+
+					//Apellidos
+					div.form-group
+						label(for="apellidos") Apellidos
+						input.form-control(type="text", name="apellidos", id="apellidos")
+					///-Apellidos
+
+					//Celular
+					div.form-group
+						label(for="celular") Celular
+						input.form-control(type="text", name="celular", id="celular")
+					///-Celular
+
+					//Telefono
+					div.form-group
+						label(for="telefono") Teléfono
+						input.form-control(type="text", name="telefono", id="telefono")
+					///-Telefono
+
+
+					//email
+					div.form-group
+						label(for="email") Email
+						input.form-control(type="email", name="email", id="email")
+					///-email
+
+
+					//confirmar email
+					div.form-group
+						label(for="cemail") Confirma Email
+						input.form-control(type="email", name="cemail", id="cemail")
+					///-confirmar email
+
+					h2 Datos de login
+
+					//contraseña
+					div.form-group
+						label(for="password") Contraseña
+						input.form-control(type="password", name="password", id="password")
+					///-contraseña
+
+					//Confirmar contraseña
+					div.form-group
+						label(for="cpassword") Confirmar Contraseña
+						input.form-control(type="password", name="cpassword", id="cpassword")
+					///-Confirmar contraseña
+
+
+					button.btn.btn-submit(type="button") Registrarse
+
+			
+
+	
+block Scripts

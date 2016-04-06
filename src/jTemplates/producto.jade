@@ -9,12 +9,14 @@ block content
 
 		div.head
 			
-			include modules/breadcrumbs.jade
+			div.row	
+		
+				include modules/breadcrumbs.jade
 
-			block migas
-				li: a(href="index.html") Inicio
-				li: a(href="categoria.html") condones
-				li.active Durex Placer Prolongado
+				block migas
+					li: a(href="index.html") Inicio
+					li: a(href="categoria.html") condones
+					li.active Durex Placer Prolongado
 
 		article.row.row-producto
 			//imagen de producto
@@ -36,14 +38,16 @@ block content
 				div.row.row-recomendados
 					h2 También te recomendamos
 
-					div.col-lg-6.col-md-6.col-sm-6.col-xs-12
-						div.producto
-							img.img-responsive(src="images/producto-sample.png")
+					-for(y = 0; y < 2; y++)
+						div.col-lg-6.col-md-6.col-sm-6.col-xs-12
+							div.bg-blanco
+								div.producto
+									img.img-responsive(src="images/producto-sample.png")
 
-						div.info
-							h3 Gel de Placer
-							p $99.999
-							button.btn.btn-agregar agregar
+								div.info
+									h3 Gel de Placer
+									p $99.999
+									button.btn.btn-agregar(type="button") agregar
 
 			///-Datos producto
 
@@ -76,7 +80,7 @@ block content
 		///-Descripción - caracteristicas	
 		
 		//Otros productos
-		article.row.row-productos-relacionados
+		aside.row.row-productos-relacionados
 			- for(x =0; x < 4; x++ )
 				//producto
 				article.col-lg-4.col-md-4.col-sm-4.col-xs-12
