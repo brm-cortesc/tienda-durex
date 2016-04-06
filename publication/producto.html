@@ -124,9 +124,9 @@
     
   </header>
   <!--/-Header-->
-  <div class="head">
+  <div class="head head-bread">
     <div class="row">
-      <ol class="breacrumb">
+      <ol class="breadcrumb">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="categoria.html">condones</a></li>
         <li class="active">Durex Placer Prolongado</li>
@@ -136,13 +136,13 @@
   <section class="container-fluid">
     <article class="row row-producto">
       <!--imagen de producto-->
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1"><img src="images/producto-sample.jpg" alt="DUREX PLACER PROLONGADO" title="DUREX PLACER PROLONGADO" class="img-responsive"></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2"><img src="images/producto-sample.jpg" alt="DUREX PLACER PROLONGADO" title="DUREX PLACER PROLONGADO" class="img-responsive"></div>
       <!--/-imagen de producto-->
       
       <!--Datos producto-->
-      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
         <h1>DUREX® PLACER PROLONGADO</h1>
-        <p>
+        <p class="producto-resumen">
           Durex Placer Prolongado son preservativos que contienen 5% de benzocaína la cual 
           retarda el clímax del hombre para tener una relación más placentera.
           
@@ -152,30 +152,38 @@
         <div class="row row-recomendados">
           <h2>También te recomendamos</h2>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="bg-blanco">
-              <div class="producto"><img src="images/producto-sample.png" class="img-responsive"></div>
+            <div class="blanco recomendado">
+              <div class="producto"><img src="images/producto-sample-thumb.jpg" class="img-responsive"></div>
               <div class="info">
-                <h3>Gel de Placer</h3>
-                <p>$99.999</p>
+                <h3>Gel de Placer Cereza</h3>
+                <p class="precio-recomendado">$99.999</p>
                 <button type="button" class="btn btn-agregar">agregar</button>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="bg-blanco">
-              <div class="producto"><img src="images/producto-sample.png" class="img-responsive"></div>
+            <div class="blanco recomendado">
+              <div class="producto"><img src="images/producto-sample-thumb.jpg" class="img-responsive"></div>
               <div class="info">
-                <h3>Gel de Placer</h3>
-                <p>$99.999</p>
+                <h3>Gel de Placer Cereza</h3>
+                <p class="precio-recomendado">$99.999</p>
                 <button type="button" class="btn btn-agregar">agregar</button>
               </div>
             </div>
           </div>
         </div>
+        <!--input cantidad y btn agregar al carrito-->
+        <div class="comprar">
+          <input type="text" value="1" class="form-control cantidad">
+          <button type="button" class="btn btn-add-cart">Añadir al carrito</button>
+        </div>
+        <!--/-input cantidad y btn agregar al carrito-->
       </div>
       <!--/-Datos producto-->
     </article>
     <!--Descripción - caracteristicas	-->
+  </section>
+  <section class="container-fluid no-border descripcion-producto">
     <article class="row row-descripcion">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
         <h3>Detalles:</h3>
@@ -197,8 +205,9 @@
           <li> -100% electrónicamente testeados.</li>
         </ul>
       </div>
+      <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
       <div class="col-lg-12">
-        <p>
+        <p class="legal">
           Utilízala los preservativos solo una vez. Este producto debe ser almacenado en un lugar fresco y seco, lejos del sol, para optimizar su rendimiento y seguridad. Para mayor información sobre los productos Durex, contáctate con nuestra línea de atención al cliente 018000513499, al 
           correo electrónico Consumer.Relation-LATAM@rb.com, o en nuestra página web www.durex.com.co. Si tienes dudas con los despachos de los productos escríblenos al correo tiendadurex@tiendadurex.com
           
@@ -207,45 +216,51 @@
     </article>
     <!--/-Descripción - caracteristicas	-->
     <!--Otros productos-->
+  </section>
+  <section class="container-fluid">
     <aside class="row row-productos-relacionados">
       <!--producto-->
-      <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="images/condon-sample.png" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive img-producto">
+      <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 producto"><img src="images/condon-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive img-producto">
         <!--Nombre-->
-        <h2 class="text-center">Durex Placer Prolongado</h2>
-        <!--/-Nombre--><small>Contienen 5% de benzocaína</small>
+        <p class="text-center">Durex Placer Prolongado</p>
+        <!--/-Nombre--><small class="desc"> Contienen 5% de benzocaína</small>
         <!--Precio-->
-        <h3>$99.000</h3>
-        <!--/-Precio--><a href="#" role="button" class="btn btn-more">Ver Más</a><a href="#" role="button" class="btn btn-add-cart">+ Carrito</a>
+        <h3 class="precio text-center"> $99.000</h3>
+        <!--/-Precio-->
+        <div class="botones"><a href="#" role="button" class="btn btn-more">Ver Más</a><a href="#" role="button" class="btn btn-add-cart">+ Carrito</a></div>
       </article>
       <!--/-producto-->
       <!--producto-->
-      <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="images/condon-sample.png" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive img-producto">
+      <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 producto"><img src="images/condon-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive img-producto">
         <!--Nombre-->
-        <h2 class="text-center">Durex Placer Prolongado</h2>
-        <!--/-Nombre--><small>Contienen 5% de benzocaína</small>
+        <p class="text-center">Durex Placer Prolongado</p>
+        <!--/-Nombre--><small class="desc"> Contienen 5% de benzocaína</small>
         <!--Precio-->
-        <h3>$99.000</h3>
-        <!--/-Precio--><a href="#" role="button" class="btn btn-more">Ver Más</a><a href="#" role="button" class="btn btn-add-cart">+ Carrito</a>
+        <h3 class="precio text-center"> $99.000</h3>
+        <!--/-Precio-->
+        <div class="botones"><a href="#" role="button" class="btn btn-more">Ver Más</a><a href="#" role="button" class="btn btn-add-cart">+ Carrito</a></div>
       </article>
       <!--/-producto-->
       <!--producto-->
-      <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="images/condon-sample.png" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive img-producto">
+      <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 producto"><img src="images/condon-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive img-producto">
         <!--Nombre-->
-        <h2 class="text-center">Durex Placer Prolongado</h2>
-        <!--/-Nombre--><small>Contienen 5% de benzocaína</small>
+        <p class="text-center">Durex Placer Prolongado</p>
+        <!--/-Nombre--><small class="desc"> Contienen 5% de benzocaína</small>
         <!--Precio-->
-        <h3>$99.000</h3>
-        <!--/-Precio--><a href="#" role="button" class="btn btn-more">Ver Más</a><a href="#" role="button" class="btn btn-add-cart">+ Carrito</a>
+        <h3 class="precio text-center"> $99.000</h3>
+        <!--/-Precio-->
+        <div class="botones"><a href="#" role="button" class="btn btn-more">Ver Más</a><a href="#" role="button" class="btn btn-add-cart">+ Carrito</a></div>
       </article>
       <!--/-producto-->
       <!--producto-->
-      <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="images/condon-sample.png" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive img-producto">
+      <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 producto"><img src="images/condon-sample.jpg" alt="Durex Placer Prolongado" title="Durex Placer Prolongado" class="img-responsive img-producto">
         <!--Nombre-->
-        <h2 class="text-center">Durex Placer Prolongado</h2>
-        <!--/-Nombre--><small>Contienen 5% de benzocaína</small>
+        <p class="text-center">Durex Placer Prolongado</p>
+        <!--/-Nombre--><small class="desc"> Contienen 5% de benzocaína</small>
         <!--Precio-->
-        <h3>$99.000</h3>
-        <!--/-Precio--><a href="#" role="button" class="btn btn-more">Ver Más</a><a href="#" role="button" class="btn btn-add-cart">+ Carrito</a>
+        <h3 class="precio text-center"> $99.000</h3>
+        <!--/-Precio-->
+        <div class="botones"><a href="#" role="button" class="btn btn-more">Ver Más</a><a href="#" role="button" class="btn btn-add-cart">+ Carrito</a></div>
       </article>
       <!--/-producto-->
     </aside>

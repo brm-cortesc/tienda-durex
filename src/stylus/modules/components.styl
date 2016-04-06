@@ -6,6 +6,13 @@
 	background-repeat no-repeat
 	background-position center
 
+.botones
+	text-align center
+	
+	.btn
+		margin-left 1rem	
+		margin-right @margin-left
+		
 .categoria
 	path('categorias.png')
 	background-repeat no-repeat
@@ -30,12 +37,46 @@
 		background-position -215px top
 	
 
-.botones
+.comprar
+	margin-top 3rem
+	
+	.btn, .cantidad
+		display inline-block
+		vertical-align middle
+		
+	.btn
+		background-color rgba($AzulOscuro, 0.9)
+		float right
+		font-size 1.8rem
+		
+	.cantidad
+		background-color #f2f2f2
+		border 0
+		border-radius 10px
+		color #000
+		font-size 2.2rem
+		text-align center
+		max-width 8rem
+		padding 2rem !important
+		transitionBase(0.2s)
+		
+		&:active, &:focus
+			background-color darken(#f2f2f2, 30%)
+			outline 0 !important
+			outline none !important
+		
+
+.descripcion-producto
+	background $AzulOscuro
+	background linear-gradient(to right, $AzulClaro 0%, $AzulOscuro 100%)
+	color #fff
 	text-align center
 	
-	.btn
-		margin-left 1rem	
-		margin-right @margin-left	
+
+	.legal
+		text-align left
+		margin-top 1rem
+		font-size 0.8rem
 
 .head
 	background $AzulOscuro
@@ -51,3 +92,74 @@
 		
 	h1
 		font-size 3rem
+		
+
+	&-bread
+		padding 0
+		
+
+.recomendado
+	box-shadow 1px 3px 4px 4px rgba(0,0,0,0.15)
+	
+	button
+		background-color transparent
+
+
+	.btn-agregar
+		color #bbb
+		font-family $AvenirM
+		font-size 0.9rem
+		text-transform uppercase
+		padding 0.6rem 1.9rem
+		position relative
+		
+		&:before
+			background-color #bbb
+			circ(1.4rem)
+			content ""
+			display block
+			left 0
+			position absolute
+			top 25%
+			
+		&:active, &:focus
+			color $AzulOscuro
+			box-shadow none !important
+			outline 0 !important
+			outline none !important
+			
+			&:before
+				background-color $AzulOscuro
+
+	
+	.info, .producto
+		display inline-block
+		margin-left 0.5rem
+		margin-right @margin-left
+		vertical-align top
+		
+
+	.info
+		width 60%
+		
+		h3
+			color #000
+			font-family $AvenirM
+			font-size 1.1rem
+			margin-bottom 0.9rem
+			margin-top @margin-bottom
+			text-transform uppercase
+			
+		.precio-recomendado
+			color $AzulOscuro
+			font-family $AvenirL
+			font-size 1.4rem
+			
+		
+	.producto
+		width 28%
+		
+
+
+	
+

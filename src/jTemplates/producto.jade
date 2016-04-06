@@ -5,11 +5,11 @@ block title
 	title Durex Love Sex - Tienda Online
 
 block content
-	div.head
+	div.head.head-bread
 		
 		div.row
 	
-			ol.breacrumb
+			ol.breadcrumb
 				li: a(href="index.html") Inicio
 				li: a(href="categoria.html") condones
 				li.active Durex Placer Prolongado
@@ -18,15 +18,15 @@ block content
 
 		article.row.row-producto
 			//imagen de producto
-			div.col-lg-4.col-md-4.col-sm-4.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
+			div.col-lg-4.col-md-4.col-sm-4.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-2
 				img.img-responsive(src="images/producto-sample.jpg", alt="DUREX PLACER PROLONGADO", title="DUREX PLACER PROLONGADO")
 			///-imagen de producto
 
 
 			//Datos producto
-			div.col-lg-5.col-md-5.col-sm-5.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-2
+			div.col-lg-5.col-md-5.col-sm-5.col-xs-12
 				h1 DUREX® PLACER PROLONGADO
-				p.
+				p.producto-resumen.
 					Durex Placer Prolongado son preservativos que contienen 5% de benzocaína la cual 
 					retarda el clímax del hombre para tener una relación más placentera.
 
@@ -38,18 +38,29 @@ block content
 
 					-for(y = 0; y < 2; y++)
 						div.col-lg-6.col-md-6.col-sm-6.col-xs-12
-							div.bg-blanco
+							div.blanco.recomendado
 								div.producto
-									img.img-responsive(src="images/producto-sample.png")
+									img.img-responsive(src="images/producto-sample-thumb.jpg")
 
 								div.info
-									h3 Gel de Placer
-									p $99.999
+									h3 Gel de Placer Cereza
+									p.precio-recomendado $99.999
 									button.btn.btn-agregar(type="button") agregar
+				
+				//input cantidad y btn agregar al carrito
+
+				div.comprar
+					input.form-control.cantidad(type="text" value="1")
+
+					button.btn.btn-add-cart(type="button") Añadir al carrito
+
+				///-input cantidad y btn agregar al carrito
 
 			///-Datos producto
 
 		//Descripción - caracteristicas	
+
+	section.container-fluid.no-border.descripcion-producto
 		article.row.row-descripcion
 			div.col-lg-6.col-md-6.col-sm-6.col-xs-12.col-lg-offset-3.col-md-offset-3.col-sm-offset-3
 
@@ -70,32 +81,37 @@ block content
 					li -   Dermatológicamente testeados.
 					li  -100% electrónicamente testeados.
 
+			div.clearfix.visible-lg-block.visible-md-block.visible-sm-block
+			
 			div.col-lg-12
-				p.
+				p.legal.
 					Utilízala los preservativos solo una vez. Este producto debe ser almacenado en un lugar fresco y seco, lejos del sol, para optimizar su rendimiento y seguridad. Para mayor información sobre los productos Durex, contáctate con nuestra línea de atención al cliente 018000513499, al 
 					correo electrónico Consumer.Relation-LATAM@rb.com, o en nuestra página web www.durex.com.co. Si tienes dudas con los despachos de los productos escríblenos al correo tiendadurex@tiendadurex.com
 
 		///-Descripción - caracteristicas	
 		
 		//Otros productos
+	section.container-fluid
 		aside.row.row-productos-relacionados
 			- for(x =0; x < 4; x++ )
 				//producto
-				article.col-lg-4.col-md-4.col-sm-4.col-xs-12
-					img.img-responsive.img-producto(src="images/condon-sample.png", alt="Durex Placer Prolongado", title="Durex Placer Prolongado")
+				article.col-lg-3.col-md-3.col-sm-3.col-xs-12.producto
+					img.img-responsive.img-producto(src="images/condon-sample.jpg", alt="Durex Placer Prolongado", title="Durex Placer Prolongado")
 
+					
 					//Nombre
-					h2.text-center Durex Placer Prolongado
+					p.text-center Durex Placer Prolongado
 					///-Nombre
 
-					small Contienen 5% de benzocaína
+					small.desc  Contienen 5% de benzocaína
 
 					//Precio
-					h3 $99.000
+					h3.precio.text-center  $99.000
 					///-Precio
 
-					a.btn.btn-more(href="#", role="button") Ver Más
-					a.btn.btn-add-cart(href="#", role="button") + Carrito
+					div.botones
+						a.btn.btn-more(href="#", role="button") Ver Más
+						a.btn.btn-add-cart(href="#", role="button") + Carrito
 
 				///-producto
 		///-Otros productos

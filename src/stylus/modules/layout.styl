@@ -12,9 +12,56 @@
 			transitionBase(0.3s)
 			
 
-	&-categoria
+	&-categoria, &-productos-relacionados
 		margin-bottom 8rem
+		
+
+	&-descripcion
+		color #fff
+		text-align center
+		
+		h3
+			color #fff
+			font-size 1.2rem
+			text-transform uppercase
 			
+		p, ul
+			font-family $AvenirL
+			font-size 1.2rem
+			
+		ul
+			list-style-type none
+			margin 0
+			padding 0			
+
+	&-producto
+		h1
+			color #000
+			font-family $AvenirM
+			font-size 1.9rem
+			margin-bottom 1rem
+			text-align left
+			
+
+		.precio
+			color $AzulOscuro
+			position relative
+			font-size 2.4rem
+			margin-top 3rem
+			
+			&:before
+				background-color $AzulOscuro
+				height 0.1rem
+				content ""
+				left 0% 
+				position absolute 
+				right 0 
+				top -1.6rem
+				width 5% 
+			
+		.producto-resumen
+			font-family $AvenirL
+			font-size 1.1rem
 
 	&-productos
 		padding-bottom 5rem !important
@@ -37,4 +84,15 @@
 			font-family $AvenirM
 			font-size 1.2rem
 			text-align center
+			
+
+	&-recomendados
+		background-color #f2f2f2
+		padding 1.4rem
+		
+
+		h2
+			font-family $AvenirM
+			font-size 1.6rem
+			margin 0.5rem 0
 			
