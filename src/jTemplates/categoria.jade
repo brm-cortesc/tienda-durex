@@ -5,33 +5,34 @@ block title
 	title Durex Love Sex - Tienda Online
 
 block content
+	div.head
+
+		h1.text-center.
+			<i class="icon icon-condon"></i>
+			Condones
 	section.container-fluid
 
-		div.head
-
-			h1.text-center.
-				<i class="icon icon-condon"></i>
-				Condones
 
 		div.row.row-categoria
 
 			- for(x =0; x < 6; x++ )
 				//producto
-				article.col-lg-4.col-md-4.col-sm-4.col-xs-12
-					img.img-responsive.img-producto(src="images/condon-sample.png", alt="Durex Placer Prolongado", title="Durex Placer Prolongado")
+				article.col-lg-4.col-md-4.col-sm-4.col-xs-12.producto
+					img.img-responsive.img-producto(src="images/condon-sample.jpg", alt="Durex Placer Prolongado", title="Durex Placer Prolongado")
 
 					//Nombre
-					h2.text-center Durex Placer Prolongado
+					p.text-center Durex Placer Prolongado
 					///-Nombre
 
-					small Contienen 5% de benzocaína
+					small.desc  Contienen 5% de benzocaína
 
 					//Precio
-					h3 $99.000
+					h3.precio.text-center  $99.000
 					///-Precio
 
-					a.btn.btn-more(href="#", role="button") Ver Más
-					a.btn.btn-add-cart(href="#", role="button") + Carrito
+					div.botones
+						a.btn.btn-more(href="#", role="button") Ver Más
+						a.btn.btn-add-cart(href="#", role="button") + Carrito
 
 				///-producto
 
