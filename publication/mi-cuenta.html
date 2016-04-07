@@ -126,46 +126,48 @@
   <!--/-Header-->
   <div class="head">
     <h2>
-      hola
+      <strong>hola,</strong>
       <span class="nombre-usuario">Daniela</span>
     </h2>
   </div>
   <section class="container-fluid">
     <article class="row row-cuenta">
       <!--Navegacion cuenta-->
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-        <button type="button" class="btn btn-perfil">
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 botones-perfil">
+        <button type="button" class="btn btn-perfil active">
           <i class="icon icon-perfil"></i>
           <p>
-          	<strong>Mi</strong> Perfil
+          	<span>Mi</span> Perfil
           </p>
         </button>
         <button type="button" class="btn btn-preferencias">
           <i class="icon icon-preferencias"></i>
           <p>
-          	<strong>Mis</strong> Preferencias
+          	<span>Mis</span> Preferencias
           </p>
         </button>
         <button type="button" class="btn btn-suscripcion">
           <i class="icon icon-suscripcion"></i>
           <p>
-          	<strong>Mi</strong> Suscripcion
+          	<span>Mi</span> Suscripcion
           </p>
         </button>
         <button type="button" class="btn btn-ordenes">
           <i class="icon icon-ordenes"></i>
           <p>
-          	<strong>Mis</strong> Ordenes
+          	<span>Mis</span> Ordenes
           </p>
-        </button>
+          
+        </button><a href="#" role="button" class="btn btn-logout">Cerrar sesión</a>
       </div>
       <!--/-Navegacion cuenta-->
       
       <!--formularios-->
-      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
         <!--Datos personales-->
         <form id="datos-personales">
           <div class="datos datos-personales">
+            <h2>Datos Personales</h2>
             <!--Nombre-->
             <div class="form-group">
               <label for="nombre">Nombre</label>
@@ -199,9 +201,10 @@
             <!--/-email-->
             
             
-            <button type="button" class="btn btn-update-persona">Registrarse</button>
+            <button type="button" class="btn btn-update-persona">Actualizar Datos</button>
           </div>
           <div class="datos datos-seguridad">
+            <h2>Contraseña</h2>
             <!--actual contraseña-->
             <div class="form-group">
               <label for="password">Contraseña Actual</label>
@@ -220,7 +223,7 @@
               <input type="password" name="cpassword" id="cpassword" class="form-control">
             </div>
             <!--/-Confirmar contraseña-->
-            <button type="button" class="btn btn-update-pass">Registrarse</button>
+            <button type="button" class="btn btn-update-pass">Actualizar Datos</button>
           </div>
         </form>
         <!--/-Datos personales-->
@@ -230,31 +233,31 @@
             <h2>Notificaciones</h2>
             <!--SMS-->
             <div class="checkbox">
-              <input type="checkbox" name="sms" value="sms">
+              <input type="checkbox" name="sms" value="sms" id="sms">
               <label for="sms">SMS de todas las notificaciones.</label>
             </div>
             <!--/-SMS-->
             <!--resumen de ordenes-->
             <div class="checkbox">
-              <input type="checkbox" name="resumen" value="resumen">
+              <input type="checkbox" name="resumen" value="resumen" id="resumen">
               <label for="resumen">Mail con resumen de ordenes.</label>
             </div>
             <!--/-resumen de ordenes-->
             <!--status de ordenes-->
             <div class="checkbox">
-              <input type="checkbox" name="status" value="status">
+              <input type="checkbox" name="status" value="status" id="status">
               <label for="status">Mail de status de ordenes.</label>
             </div>
             <!--/-status de ordenes-->
             <!--despacho-->
             <div class="checkbox">
-              <input type="checkbox" name="despacho" value="despacho">
+              <input type="checkbox" name="despacho" value="despacho" id="despacho">
               <label for="despacho">Mail con la confirmación mensual del despacho de su suscripción.</label>
             </div>
             <!--/-despacho-->
             <!--suscripcion-->
             <div class="checkbox">
-              <input type="checkbox" name="suscripcion" value="suscripcion">
+              <input type="checkbox" name="suscripcion" value="suscripcion" id="suscripcion">
               <label for="suscripcion">Mail de status de suscripción mensual.</label>
             </div>
             <!--/-suscripcion-->
@@ -263,13 +266,13 @@
             <h2>Newsletter</h2>
             <!--lanzamiento-->
             <div class="checkbox">
-              <input type="checkbox" name="lanzamiento" value="lanzamiento">
+              <input type="checkbox" name="lanzamiento" value="lanzamiento" id="lanzamiento">
               <label for="lanzamiento">Lanzamiento de nuevos productos.</label>
             </div>
             <!--/-lanzamiento-->
             <!--ofertas-->
             <div class="checkbox">
-              <input type="checkbox" name="ofertas" value="ofertas">
+              <input type="checkbox" name="ofertas" value="ofertas" id="ofertas">
               <label for="ofertas">Ofertas y noticias exclusivas.</label>
             </div>
             <!--/-ofertas-->
@@ -277,31 +280,36 @@
         </form>
         <!--suscripcion	-->
         <div class="datos datos-sucripcion hidden">
+          <h2>Suscripción</h2>
           <div class="suscripcion">
             <div class="status status-active">
-              <h3>Activada</h3>
+              <p>Activada</p>
             </div>
             <div class="row">
               <!--Tipo de suscripcion-->
               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <p>Tipo de suscripción</p>
-                <h2>Oro</h2>
+                <h4>Oro</h4>
               </div>
               <!--/-Tipo de suscripcion-->
               <!--valor de suscripcion-->
               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <p>Valor de suscripción</p>
-                <h2>$99.999</h2>
+                <h4>$99.999</h4>
               </div>
               <!--/-valor de suscripcion-->
               <!--pago-->
               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <p>Método de pago</p>
-                <h2 class="tarjeta tarjeta-visa">99.999</h2>
+                <h4 class="metodo-pago">
+                  <div class="tarjeta tarjeta-visa"></div>
+                  4560
+                </h4>
               </div>
               <!--/-pago-->
+              <div class="clearfix"></div>
               <!--controls-->
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 controls">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-lg-offset-9 col-md-offset-9 col-sm-offset-9 controls">
                 <p><a class="modificar-suscripcion" href="#">MODIFICAR</a>   |   <a class="pausar-suscripcion" href="#">PAUSAR</a></p>
               </div>
               <!--/-controls-->
@@ -310,24 +318,25 @@
         </div>
         <!--/-suscripcion	-->
         <div class="datos datos-ordenes hidden">
+          <h2>Órdenes</h2>
           <div class="table-responsive">
             <table class="table">
-              <tr class="info">
-                <td>ORDEN #13578 | 12/06/16</td>
+              <tr class="num-orden">
+                <td colspan="4">ORDEN #13578 | 12/06/16</td>
               </tr>
-              <th>
-                <td>SKU</td>
-                <td>Nombre</td>
-                <td colspan="2">Valor</td>
-              </th>
+              <tr>
+                <th>SKU</th>
+                <th>Nombre</th>
+                <th colspan="2">Valor</th>
+              </tr>
               <tr>
                 <td>34534345</td>
                 <td>Combo Durex</td>
                 <td>$14.500</td>
                 <td rowspan="2" class="total">
-                  <p>TOTAL</p>
+                  <h4>total</h4>
                   <p class="valor">$45.600</p>
-                  <p class="descarga">DESCARGAR FACTURA</p>
+                  <p class="descarga"><a href="#">descargar factura</a></p>
                   
                 </td>
               </tr>
@@ -340,22 +349,22 @@
           </div>
           <div class="table-responsive">
             <table class="table">
-              <tr class="info">
-                <td>ORDEN #13578 | 12/06/16</td>
+              <tr class="num-orden">
+                <td colspan="4">ORDEN #13578 | 12/06/16</td>
               </tr>
-              <th>
-                <td>SKU</td>
-                <td>Nombre</td>
-                <td colspan="2">Valor</td>
-              </th>
+              <tr>
+                <th>SKU</th>
+                <th>Nombre</th>
+                <th colspan="2">Valor</th>
+              </tr>
               <tr>
                 <td>34534345</td>
                 <td>Combo Durex</td>
                 <td>$14.500</td>
                 <td rowspan="2" class="total">
-                  <p>TOTAL</p>
+                  <h4>total</h4>
                   <p class="valor">$45.600</p>
-                  <p class="descarga">DESCARGAR FACTURA</p>
+                  <p class="descarga"><a href="#">descargar factura</a></p>
                   
                 </td>
               </tr>
@@ -368,22 +377,22 @@
           </div>
           <div class="table-responsive">
             <table class="table">
-              <tr class="info">
-                <td>ORDEN #13578 | 12/06/16</td>
+              <tr class="num-orden">
+                <td colspan="4">ORDEN #13578 | 12/06/16</td>
               </tr>
-              <th>
-                <td>SKU</td>
-                <td>Nombre</td>
-                <td colspan="2">Valor</td>
-              </th>
+              <tr>
+                <th>SKU</th>
+                <th>Nombre</th>
+                <th colspan="2">Valor</th>
+              </tr>
               <tr>
                 <td>34534345</td>
                 <td>Combo Durex</td>
                 <td>$14.500</td>
                 <td rowspan="2" class="total">
-                  <p>TOTAL</p>
+                  <h4>total</h4>
                   <p class="valor">$45.600</p>
-                  <p class="descarga">DESCARGAR FACTURA</p>
+                  <p class="descarga"><a href="#">descargar factura</a></p>
                   
                 </td>
               </tr>
@@ -396,22 +405,22 @@
           </div>
           <div class="table-responsive">
             <table class="table">
-              <tr class="info">
-                <td>ORDEN #13578 | 12/06/16</td>
+              <tr class="num-orden">
+                <td colspan="4">ORDEN #13578 | 12/06/16</td>
               </tr>
-              <th>
-                <td>SKU</td>
-                <td>Nombre</td>
-                <td colspan="2">Valor</td>
-              </th>
+              <tr>
+                <th>SKU</th>
+                <th>Nombre</th>
+                <th colspan="2">Valor</th>
+              </tr>
               <tr>
                 <td>34534345</td>
                 <td>Combo Durex</td>
                 <td>$14.500</td>
                 <td rowspan="2" class="total">
-                  <p>TOTAL</p>
+                  <h4>total</h4>
                   <p class="valor">$45.600</p>
-                  <p class="descarga">DESCARGAR FACTURA</p>
+                  <p class="descarga"><a href="#">descargar factura</a></p>
                   
                 </td>
               </tr>

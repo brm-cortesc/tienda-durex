@@ -1,0 +1,152 @@
+.btn.active
+	background-color $AzulOscuro
+	box-shadow 5px 5px 20px 0px rgba(#b3b3b3, 0.5)
+	color #fff
+	
+	i
+		color #fff
+		
+
+.datos
+	background-color $Gris
+	box-shadow 1px 3px 4px 4px rgba(0,0,0,0.15)
+	padding 1rem 3rem !important
+	margin 2rem auto 5rem
+	
+
+	h2
+		color #000
+		font-family $AvenirR
+		font-size 2rem
+		margin-bottom 3rem
+		position relative
+		
+		&:after
+			background-color $AzulClaro
+			bottom -0.5rem 
+			content ""
+			height 0.3rem
+			left 0 
+			position absolute
+			width 10%
+			
+	
+	.btn
+		background-color $AzulClaro
+		display block
+		
+
+	.checkbox
+		margin-bottom 1.2rem
+		margin-left 1rem
+		margin-top @margin-bottom
+
+		label
+			cursor pointer
+			display inline-block
+			font-size 1.2rem
+			padding-left 1.5rem
+			position relative
+			
+			&:before
+				color $AzulClaro
+				content "\e901"
+				display inline-block
+				font-family $Durex
+				font-size 1.7rem
+				font-style normal
+				font-variant normal
+				font-weight normal
+				left -1rem
+				line-height 1
+				position absolute
+				speak none
+				text-transform none
+				top 0
+				-moz-osx-font-smoothing grayscale
+				-webkit-font-smoothing antialiased
+
+			a
+				position relative
+				z-index 1
+				
+		input
+			cursor pointer
+			left 0
+			opacity 0
+			width 100%
+			z-index 1
+			
+			&[type="checkbox"]:checked + label:before
+				content "\e902"
+
+	.form-group
+		width 43%
+		
+
+	&-ordenes
+		margin-bottom 6rem
+		.table
+			font-family $AvenirL
+			font-size 1rem
+			margin-bottom 0 !important
+			
+			tr,td,th
+				border none
+			
+			&-responsive
+				background-color #fff
+				border 1px solid darken($Gris, 20%)
+				border-radius 5px
+				padding 1rem 0.5rem 0.5rem
+				margin-bottom 3rem
+				
+		.total
+			color $AzulOscuro
+			text-align right
+			line-height 1rem
+			
+			h4
+				font-family $AvenirL
+				font-size 1.2rem
+				text-transform uppercase
+				margin 0
+				
+			.valor
+				font-family $AvenirH
+				font-size 1.2rem
+
+.status
+	p
+		padding-left 1.3rem
+		position relative
+		text-transform uppercase
+		
+		&:before
+			background-color #70a83b
+			circ(1rem)
+			content ""
+			display block
+			left 0
+			position absolute
+
+
+.suscripcion
+	background-color #fff
+	border 1px solid darken($Gris, 20%)
+	border-radius 5px
+	padding 1rem 0.5rem 0.5rem
+	margin-bottom 3rem
+	
+
+	h4
+		font-family $AvenirB
+	
+	p
+		font-family $AvenirL
+		font-size 0.8rem
+	
+
+
+
+

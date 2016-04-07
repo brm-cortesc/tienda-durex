@@ -33,6 +33,11 @@
 		margin 5rem auto 9rem
 		text-transform uppercase
 		max-width 27.6rem
+		
+
+	&-logout
+		background-color transparent
+		color $AzulOscuro
 	
 	&-more
 		background-color $AzulClaro
@@ -41,7 +46,46 @@
 			background-color darken(@background-color, 40%)
 			color #fff !important
 
-	
+	&-ordenes,
+	&-perfil,
+	&-preferencias,
+	&-suscripcion
+		background-color $Gris
+		box-shadow 5px 5px 20px 0px rgba(#b3b3b3, 0.5)
+		color $AzulClaro
+		font-size 1.6rem
+		height 10rem
+		margin 2rem auto
+		padding 0.8rem
+		width 14.6rem
+		
+		i
+			color $AzulOscuro
+			display block
+			font-size 6rem
+			margin-bottom -1.1rem	
+			text-align center
+			transitionBase(0.3s)
+		
+		p
+			line-height 1.7rem
+			text-align left
+
+		span
+			display block
+			font-family $AvenirBl
+			max-width 3rem
+
+		
+		&:active, &:focus, &:hover
+			background-color $AzulClaro
+			color #fff
+			outline 0 !important
+			outline none !important
+			
+			i
+				color #fff
+				
 
 	&-submit
 		background-color $AzulClaro

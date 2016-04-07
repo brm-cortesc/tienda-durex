@@ -8,7 +8,7 @@ block content
 	div.head
 		
 		h2.
-			hola
+			<strong>hola,</strong>
 			<span class="nombre-usuario">Daniela</span>
 	section.container-fluid
 
@@ -16,38 +16,41 @@ block content
 		article.row.row-cuenta
 
 			//Navegacion cuenta
-			div.col-lg-2.col-md-2.col-sm-2.col-xs-12
-				button.btn.btn-perfil(type="button").
+			div.col-lg-2.col-md-2.col-sm-2.col-xs-12.botones-perfil
+				button.btn.btn-perfil.active(type="button").
 					<i class="icon icon-perfil"></i>
 					<p>
-						<strong>Mi</strong> Perfil
+						<span>Mi</span> Perfil
 					</p>
 				button.btn.btn-preferencias(type="button").
 					<i class="icon icon-preferencias"></i>
 					<p>
-						<strong>Mis</strong> Preferencias
+						<span>Mis</span> Preferencias
 					</p>
 				button.btn.btn-suscripcion(type="button").
 					<i class="icon icon-suscripcion"></i>
 					<p>
-						<strong>Mi</strong> Suscripcion
+						<span>Mi</span> Suscripcion
 					</p>
 				button.btn.btn-ordenes(type="button").
 					<i class="icon icon-ordenes"></i>
 					<p>
-						<strong>Mis</strong> Ordenes
+						<span>Mis</span> Ordenes
 					</p>
+
+				a.btn.btn-logout(href="#",role="button") Cerrar sesión
 			///-Navegacion cuenta
 
 
 			//formularios
-			div.col-lg-5.col-md-5.col-sm-5.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
+			div.col-lg-6.col-md-6.col-sm-6.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
 				
 				//Datos personales
 				form#datos-personales
 					
 
 					div.datos.datos-personales
+						h2 Datos Personales
 						
 						//Nombre
 						div.form-group
@@ -82,10 +85,12 @@ block content
 
 
 
-						button.btn.btn-update-persona(type="button") Registrarse
+						button.btn.btn-update-persona(type="button") Actualizar Datos
 
 
 					div.datos.datos-seguridad
+
+						h2 Contraseña
 
 						//actual contraseña
 						div.form-group
@@ -104,7 +109,7 @@ block content
 							label(for="cpassword") Confirmar Contraseña
 							input.form-control(type="password", name="cpassword", id="cpassword")
 						///-Confirmar contraseña
-						button.btn.btn-update-pass(type="button") Registrarse
+						button.btn.btn-update-pass(type="button") Actualizar Datos
 				///-Datos personales
 				//Preferencias
 				form#preferencias.hidden
@@ -113,31 +118,31 @@ block content
 						h2 Notificaciones
 						//SMS
 						div.checkbox
-							input(type="checkbox", name="sms", value="sms")
+							input(type="checkbox", name="sms", value="sms", id="sms")
 							label(for="sms") SMS de todas las notificaciones.
 						///-SMS
 
 						//resumen de ordenes
 						div.checkbox
-							input(type="checkbox", name="resumen", value="resumen")
+							input(type="checkbox", name="resumen", value="resumen", id="resumen")
 							label(for="resumen") Mail con resumen de ordenes.
 						///-resumen de ordenes
 
 						//status de ordenes
 						div.checkbox
-							input(type="checkbox", name="status", value="status")
+							input(type="checkbox", name="status", value="status", id="status")
 							label(for="status") Mail de status de ordenes.
 						///-status de ordenes
 
 						//despacho
 						div.checkbox
-							input(type="checkbox", name="despacho", value="despacho")
+							input(type="checkbox", name="despacho", value="despacho", id="despacho")
 							label(for="despacho") Mail con la confirmación mensual del despacho de su suscripción.
 						///-despacho
 
 						//suscripcion
 						div.checkbox
-							input(type="checkbox", name="suscripcion", value="suscripcion")
+							input(type="checkbox", name="suscripcion", value="suscripcion", id="suscripcion")
 							label(for="suscripcion") Mail de status de suscripción mensual.
 						///-suscripcion
 
@@ -146,47 +151,52 @@ block content
 
 						//lanzamiento
 						div.checkbox
-							input(type="checkbox", name="lanzamiento", value="lanzamiento")
+							input(type="checkbox", name="lanzamiento", value="lanzamiento", id="lanzamiento")
 							label(for="lanzamiento") Lanzamiento de nuevos productos.
 						///-lanzamiento
 
 						//ofertas
 						div.checkbox
-							input(type="checkbox", name="ofertas", value="ofertas")
+							input(type="checkbox", name="ofertas", value="ofertas", id="ofertas")
 							label(for="ofertas") Ofertas y noticias exclusivas.
 						///-ofertas
 				
 				//suscripcion	
 				div.datos.datos-sucripcion.hidden
+
+					h2 Suscripción
 					
 					div.suscripcion
 						div.status.status-active
-							h3 Activada
+							p Activada
 						
 						div.row
 							//Tipo de suscripcion
 							div.col-lg-3.col-md-3.col-sm-3.col-xs-12
 								p Tipo de suscripción
 
-								h2 Oro
+								h4 Oro
 							///-Tipo de suscripcion
 
 							//valor de suscripcion
 							div.col-lg-3.col-md-3.col-sm-3.col-xs-12
 								p Valor de suscripción
 
-								h2 $99.999
+								h4 $99.999
 							///-valor de suscripcion
 
 							//pago
 							div.col-lg-3.col-md-3.col-sm-3.col-xs-12
 								p Método de pago
 
-								h2.tarjeta.tarjeta-visa 99.999
+								h4.metodo-pago.
+									<div class="tarjeta tarjeta-visa"></div>
+									4560
 							///-pago
-
+							
+							div.clearfix
 							//controls
-							div.col-lg-3.col-md-3.col-sm-3.col-xs-12.controls
+							div.col-lg-3.col-md-3.col-sm-3.col-xs-12.col-lg-offset-9.col-md-offset-9.col-sm-offset-9.controls
 								p.
 									<a class="modificar-suscripcion" href="#">MODIFICAR</a>   |   <a class="pausar-suscripcion" href="#">PAUSAR</a>
 							///-controls
@@ -195,16 +205,18 @@ block content
 
 				div.datos.datos-ordenes.hidden
 
+					h2 Órdenes
+
 					-for(x = 0; x < 4;x++)
 						div.table-responsive
 							table.table
-								tr.info
-									td ORDEN #13578 | 12/06/16
+								tr.num-orden
+									td(colspan="4") ORDEN #13578 | 12/06/16
 
-								th
-									td SKU
-									td Nombre
-									td(colspan="2") Valor
+								tr
+									th SKU
+									th Nombre
+									th(colspan="2") Valor
 
 								tr
 
@@ -212,9 +224,9 @@ block content
 									td Combo Durex
 									td $14.500
 									td.total(rowspan="2").
-										<p>TOTAL</p>
+										<h4>total</h4>
 										<p class="valor">$45.600</p>
-										<p class="descarga">DESCARGAR FACTURA</p>
+										<p class="descarga"><a href="#">descargar factura</a></p>
 
 								tr
 									td 35434345   
