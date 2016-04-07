@@ -10,37 +10,37 @@ block content
 		h1 Contacto
 	section.container-fluid
 
+		div.row.row-contacto
+			article.col-lg-4.col-md-4.col-sm-4.col-xs-12.col-lg-offset-4.col-md-offset-4.col-sm-offset-4
 
-		article.row.row-contacto
+				form#contacto(method="#")
+					h2 Formulario de contacto
 
-			form#contacto(method="#")
-				h2 Formulario de contacto
+					//Nombre
+					div.form-group
+						label(for="nombre") Nombre
+						input.form-control(type="text", name="nombre", id="nombre")
+					///-Nombre
 
-				//Nombre
-				div.form-group
-					label(for="nombre") Nombre
-					input.form-control(type="text", name="nombre", id="nombre")
-				///-Nombre
+					//email
+					div.form-group
+						label(for="email") Correo Electrónico
+						input.form-control(type="email", name="email", id="email")
+					///-email
 
-				//email
-				div.form-group
-					label(for="email") Correo Electrónico
-					input.form-control(type="email", name="email", id="email")
-				///-email
+					//phone
+					div.form-group
+						label(for="phone") Teléfono
+						input.form-control(type="text", name="phone", id="phone")
+					///-phone
 
-				//phone
-				div.form-group
-					label(for="phone") Teléfono
-					input.form-control(type="text", name="phone", id="phone")
-				///-phone
+					//mensaje
+					div.form-group
+						label(for="mensaje") Mensaje
+						textarea.form-control(name="mensaje", id="mensaje", rows="1")
+					///-mensaje
 
-				//mensaje
-				div.form-group
-					label(for="mensaje") Mensaje
-					textarea.form-control(name="mensaje", id="mensaje", rows="1")
-				///-mensaje
-
-				button.btn.btn-submit-contact(type="button") Enviar
+					button.btn.btn-submit-contact(type="button") Enviar
 
 	
 block Scripts
