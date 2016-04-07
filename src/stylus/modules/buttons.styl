@@ -9,12 +9,31 @@
 	text-transform uppercase
 	transitionBase(0.2s)
 	
+	&-add-cart
+		background-color $AzulOscuro
+		
+		&:hover
+			background-color lighten(@background-color, 40%)
+			color #fff !important
 
 	&-checkout
 		background-color rgba($AzulClaro, 0.9)
 		font-size 1.6rem
 		margin-top 4rem
 		
+	&-ir
+		background-color $AzulClaro
+		font-size 1.7rem
+	
+	&-go-checkout
+		background-color $AzulClaro
+		display block
+		font-size 2rem
+		padding 1rem 0rem
+		margin 5rem auto 9rem
+		text-transform uppercase
+		max-width 27.6rem
+	
 	&-more
 		background-color $AzulClaro
 		
@@ -22,16 +41,7 @@
 			background-color darken(@background-color, 40%)
 			color #fff !important
 
-	&-add-cart
-		background-color $AzulOscuro
-		
-		&:hover
-			background-color lighten(@background-color, 40%)
-			color #fff !important
 	
-	&-ir
-		background-color $AzulClaro
-		font-size 1.7rem		
 
 	&-submit
 		background-color $AzulClaro

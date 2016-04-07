@@ -107,7 +107,7 @@ block content
 						button.btn.btn-update-pass(type="button") Registrarse
 				///-Datos personales
 				//Preferencias
-				form#preferencias
+				form#preferencias.hidden
 
 					div.datos.datos-notificaciones
 						h2 Notificaciones
@@ -157,7 +157,7 @@ block content
 						///-ofertas
 				
 				//suscripcion	
-				div.datos.datos-sucripcion
+				div.datos.datos-sucripcion.hidden
 					
 					div.suscripcion
 						div.status.status-active
@@ -193,7 +193,7 @@ block content
 				///-suscripcion	
 				
 
-				div.datos.datos-ordenes
+				div.datos.datos-ordenes.hidden
 
 					-for(x = 0; x < 4;x++)
 						div.table-responsive

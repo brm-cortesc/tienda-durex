@@ -14,9 +14,9 @@ block content
 		div.row.row-select-membresia
 
 			//Plata
-			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12.membresia(data-membresia="plata")
 				
-				i.select
+				i.select-radio
 				h2 Plata
 
 				p.membresia-precio $16.000
@@ -25,21 +25,24 @@ block content
 				
 				p.membresia-desc 6 Condones
 
-				div.membresia-condones.hidden
+				div.membresia-condones
 
 					h3 Selecciona los condones y cantidades
 
-					-for(x =0; x < 6; x++)
-						div.condon
-							img(src="images/condon.png")
-							span.badge #{x}
+					div.condones
+					
+						-for(x =0; x < 6; x++)
+							div.condon
+								img(src="images/condon.png")
+								//- span.badge #{x}
+								input.cantidad-condon(type="text", value="#{x}")
 
 			///-Plata
 
 			//Oro
-			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12.membresia(data-membresia="oro")
 				
-				i.select
+				i.select-radio
 				h2 Oro
 
 				p.membresia-precio $23.000
@@ -53,16 +56,19 @@ block content
 
 					h3 Selecciona los condones y cantidades
 
-					-for(y =0; y < 6; y++)
-						div.condon
-							img(src="images/condon.png")
-							span.badge #{y}
+					div.condones
+					
+						-for(y =0; y < 6; y++)
+							div.condon
+								img(src="images/condon.png")
+								//- span.badge #{y}
+								input.cantidad-condon(type="text", value="#{y}")
 
 			///-Oro
 
 			//Rodio
-			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
-				i.select
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12.membresia(data-membresia="rodio")
+				i.select-radio
 				h2 Rodio
 
 				p.membresia-precio $47.000
@@ -76,16 +82,19 @@ block content
 
 					h3 Selecciona los condones y cantidades
 
-					-for(z =0; z < 6; z++)
-						div.condon
-							img(src="images/condon.png")
-							span.badge #{z}
+					div.condones					
+
+						-for(z =0; z < 6; z++)
+							div.condon
+								img(src="images/condon.png")
+								//- span.badge #{z}
+								input.cantidad-condon(type="text", value="#{z}")
 
 			///-Rodio
 
 			//Diamante
-			article.col-lg-3.col-md-3.col-sm-3.col-xs-12
-				i.select
+			article.col-lg-3.col-md-3.col-sm-3.col-xs-12.membresia(data-membresia="diamante")
+				i.select-radio
 				h2 Diamante
 
 				p.membresia-precio $60.000
@@ -100,13 +109,17 @@ block content
 
 					h3 Selecciona los condones y cantidades
 
-					-for(a =0; a < 6; a++)
-						div.condon
-							img(src="images/condon.png")
-							span.badge #{a}
+					div.condones
+
+						-for(a =0; a < 6; a++)
+							div.condon
+								img(src="images/condon.png")
+								//- span.badge #{a}
+								input.cantidad-condon(type="text", value="#{a}")
 			///-Diamante
 		
-		div.row.azul-oscuro
+	section.container-fluid.no-border.azul-oscuro
+		div.row
 			a.btn.btn-go-checkout(href="#").
 				IR AL CHECKOUT <i class="icon icon-go"></i>
 
