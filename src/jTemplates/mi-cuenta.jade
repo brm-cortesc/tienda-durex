@@ -17,22 +17,22 @@ block content
 
 			//Navegacion cuenta
 			div.col-lg-2.col-md-2.col-sm-2.col-xs-12.botones-perfil
-				button.btn.btn-perfil.active(type="button").
+				button.btn.btn-perfil.active(type="button", data-btn="perfil").
 					<i class="icon icon-perfil"></i>
 					<p>
 						<span>Mi</span> Perfil
 					</p>
-				button.btn.btn-preferencias(type="button").
+				button.btn.btn-preferencias(type="button", data-btn="preferencias").
 					<i class="icon icon-preferencias"></i>
 					<p>
 						<span>Mis</span> Preferencias
 					</p>
-				button.btn.btn-suscripcion(type="button").
+				button.btn.btn-suscripcion(type="button", data-btn="suscripcion").
 					<i class="icon icon-suscripcion"></i>
 					<p>
 						<span>Mi</span> Suscripcion
 					</p>
-				button.btn.btn-ordenes(type="button").
+				button.btn.btn-ordenes(type="button", data-btn="ordenes").
 					<i class="icon icon-ordenes"></i>
 					<p>
 						<span>Mis</span> Ordenes
@@ -46,7 +46,7 @@ block content
 			div.col-lg-6.col-md-6.col-sm-6.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-1
 				
 				//Datos personales
-				form#datos-personales
+				form#datos-personales.cuenta
 					
 
 					div.datos.datos-personales
@@ -112,7 +112,7 @@ block content
 						button.btn.btn-update-pass(type="button") Actualizar Datos
 				///-Datos personales
 				//Preferencias
-				form#preferencias.hidden
+				form#preferencias.cuenta.hidden
 
 					div.datos.datos-notificaciones
 						h2 Notificaciones
@@ -162,13 +162,13 @@ block content
 						///-ofertas
 				
 				//suscripcion	
-				div.datos.datos-sucripcion.hidden
+				div.datos.datos-sucripcion.cuenta.hidden
 
 					h2 Suscripción
 					
 					div.suscripcion
 						div.status.status-active
-							p Activada
+							p activada
 						
 						div.row
 							//Tipo de suscripcion
@@ -198,12 +198,12 @@ block content
 							//controls
 							div.col-lg-3.col-md-3.col-sm-3.col-xs-12.col-lg-offset-9.col-md-offset-9.col-sm-offset-9.controls
 								p.
-									<a class="modificar-suscripcion" href="#">MODIFICAR</a>   |   <a class="pausar-suscripcion" href="#">PAUSAR</a>
+									<a class="modificar-suscripcion" href="#">modificar</a>   |   <a class="pausar-suscripcion" href="#">pausar</a>
 							///-controls
 				///-suscripcion	
 				
 
-				div.datos.datos-ordenes.hidden
+				div.datos.datos-ordenes.cuenta.hidden
 
 					h2 Órdenes
 

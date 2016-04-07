@@ -134,25 +134,25 @@
     <article class="row row-cuenta">
       <!--Navegacion cuenta-->
       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 botones-perfil">
-        <button type="button" class="btn btn-perfil active">
+        <button type="button" data-btn="perfil" class="btn btn-perfil active">
           <i class="icon icon-perfil"></i>
           <p>
           	<span>Mi</span> Perfil
           </p>
         </button>
-        <button type="button" class="btn btn-preferencias">
+        <button type="button" data-btn="preferencias" class="btn btn-preferencias">
           <i class="icon icon-preferencias"></i>
           <p>
           	<span>Mis</span> Preferencias
           </p>
         </button>
-        <button type="button" class="btn btn-suscripcion">
+        <button type="button" data-btn="suscripcion" class="btn btn-suscripcion">
           <i class="icon icon-suscripcion"></i>
           <p>
           	<span>Mi</span> Suscripcion
           </p>
         </button>
-        <button type="button" class="btn btn-ordenes">
+        <button type="button" data-btn="ordenes" class="btn btn-ordenes">
           <i class="icon icon-ordenes"></i>
           <p>
           	<span>Mis</span> Ordenes
@@ -165,7 +165,7 @@
       <!--formularios-->
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
         <!--Datos personales-->
-        <form id="datos-personales">
+        <form id="datos-personales" class="cuenta">
           <div class="datos datos-personales">
             <h2>Datos Personales</h2>
             <!--Nombre-->
@@ -228,7 +228,7 @@
         </form>
         <!--/-Datos personales-->
         <!--Preferencias-->
-        <form id="preferencias" class="hidden">
+        <form id="preferencias" class="cuenta hidden">
           <div class="datos datos-notificaciones">
             <h2>Notificaciones</h2>
             <!--SMS-->
@@ -279,11 +279,11 @@
           </div>
         </form>
         <!--suscripcion	-->
-        <div class="datos datos-sucripcion hidden">
+        <div class="datos datos-sucripcion cuenta hidden">
           <h2>Suscripción</h2>
           <div class="suscripcion">
             <div class="status status-active">
-              <p>Activada</p>
+              <p>activada</p>
             </div>
             <div class="row">
               <!--Tipo de suscripcion-->
@@ -310,14 +310,14 @@
               <div class="clearfix"></div>
               <!--controls-->
               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-lg-offset-9 col-md-offset-9 col-sm-offset-9 controls">
-                <p><a class="modificar-suscripcion" href="#">MODIFICAR</a>   |   <a class="pausar-suscripcion" href="#">PAUSAR</a></p>
+                <p><a class="modificar-suscripcion" href="#">modificar</a>   |   <a class="pausar-suscripcion" href="#">pausar</a></p>
               </div>
               <!--/-controls-->
             </div>
           </div>
         </div>
         <!--/-suscripcion	-->
-        <div class="datos datos-ordenes hidden">
+        <div class="datos datos-ordenes cuenta hidden">
           <h2>Órdenes</h2>
           <div class="table-responsive">
             <table class="table">

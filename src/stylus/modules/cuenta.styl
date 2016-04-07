@@ -2,6 +2,7 @@
 	background-color $AzulOscuro
 	box-shadow 5px 5px 20px 0px rgba(#b3b3b3, 0.5)
 	color #fff
+	pointer-events none !important
 	
 	i
 		color #fff
@@ -79,7 +80,10 @@
 			
 			&[type="checkbox"]:checked + label:before
 				content "\e902"
-
+	.controls
+		a
+			text-transform uppercase
+			
 	.form-group
 		width 43%
 		
@@ -123,12 +127,24 @@
 		text-transform uppercase
 		
 		&:before
-			background-color #70a83b
+			background-color $Gris
 			circ(1rem)
 			content ""
 			display block
 			left 0
 			position absolute
+			
+
+	&-active
+		p 
+			&:before
+				background-color #70a83b
+			
+
+	&-paused
+		p 
+			&:before
+				background-color #bf0411 
 
 
 .suscripcion
