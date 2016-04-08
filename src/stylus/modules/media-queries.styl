@@ -15,9 +15,29 @@
 		margin-left 0
 
 
+@media (max-width: 1130px)
+
+	.comprar
+		margin-bottom 3rem
+		
+	
+	.img-producto
+		max-width 100%
+
+	.recomendado
+		.info
+			width 44%
+
 @media (max-width: 960px)
 	.bg-categorias
 		background-size cover
+		
+
+	.recomendado
+		.info
+			width 50%
+		
+
 
 
 @media (max-width: 880px)
@@ -56,10 +76,6 @@
 			background-position -187px top
 			
 	
-	
-
-		
-
 	.user-tools
 
 		.perfil a, .status-cart a
@@ -112,21 +128,40 @@
 			ul
 				li
 					margin 1rem
+	
+	
+	.recomendado
+		margin-bottom 1rem
+		margin-top @margin-bottom
 
+	.row-descripcion
+		text-align left
 
 @media (max-width: 640px)
+	
+	.btn
+		padding 0.6rem 0.9rem
+
 	.carousel
 		
 		.item 
 			.img-banner
 				max-width 180%
 				
-
+	
+	.row-producto
+		.col-lg-4
+			.img-responsive
+				margin-left -20%
+				max-width 200%
 
 @media (max-width: 580px)
 	
 	.btn
 		padding 0.6rem 0.9rem
+		
+		&-add-cart
+			font-size 1.2rem !important
 		
 	.botones
 		.btn
@@ -150,15 +185,22 @@
 				
 			p
 				font-size 1.4rem
-				
-
-	.img-producto
-		max-width 100%
 		
+
+	.comprar
+		margin-top 0
+		.cantidad
+			max-width 5rem		
 
 	.producto
 		margin-bottom 4rem
-
+		
+	.row-producto
+		.col-lg-4
+			.img-responsive
+				margin-left -35%
+				max-width 160%
+	
 
 @media (max-width: 460px)
 
@@ -171,6 +213,18 @@
 			.img-banner
 				max-width 250%
 				
+	.comprar
+		margin-top 4rem
+		transform translate3d(-50%,0,0)
+		width 110%
+		
+		.btn
+			font-size 1rem !important
+				
+	.row-recomendados
+		margin-top 11rem
+		width 200%
+		transform translate3d(-50%,0,0)
 
 @media (max-width: 380px)
 
@@ -186,3 +240,15 @@
 				margin-left -100%
 				max-width 300%
 
+	
+	.comprar
+		margin-left -4rem
+		transform translate3d(-32%, 0, 0)
+		width 145%
+		
+		.btn
+			font-size 1.1rem !important
+
+	.row-recomendados
+		margin-top 2rem
+		
