@@ -76,6 +76,7 @@ jQuery(document).ready(function($) {
 		// };
 
 	});
+	
 	/*Seleccion de membresia*/
 
 	/* Mostrar/ocultar mini login */
@@ -112,6 +113,40 @@ jQuery(document).ready(function($) {
 
 	});
 	/* Mostrar/ocultar mini cart */
+
+	/*Mostrar fields legales*/
+
+	$('.lista-legales a').click(function(event) {
+
+		var tipo = $(this).attr('data-tipo');
+	
+		event.preventDefault();
+
+		$('.lista-legales li').removeClass('active');
+		$(this).parent().toggleClass('active');
+
+		switch(tipo){
+
+			case 'politicas':
+				$('.row-legales article').addClass('hidden');
+				$('article.politicas').toggleClass('hidden');
+			break;
+
+			case 'terminos':
+				$('.row-legales article').addClass('hidden');
+				$('article.terminos').toggleClass('hidden');
+			break;
+
+			case 'pedidos':
+				$('.row-legales article').addClass('hidden');
+				$('article.pedidos').toggleClass('hidden');
+			break;
+
+		};
+
+
+
+	});
 
 
 });

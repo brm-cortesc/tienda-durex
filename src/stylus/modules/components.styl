@@ -2,6 +2,7 @@
 
 .bg-categorias
 	path("bg-categorias.jpg")
+	background-color  #ddecf3
 	background-position center
 	background-repeat no-repeat
 	background-size 100%
@@ -168,7 +169,51 @@
 		color $AzulOscuro
 		font-size 2rem
 		
+
+.lista-legales
+	background-color $Gris
+	box-shadow 1px 3px 4px 4px rgba(0,0,0,0.15)
+	list-style-type none
+	padding 1rem
+	max-width 90%
 	
+	li
+		margin-bottom 1rem
+		margin-top @margin-bottom
+		
+		a 
+			color #000
+			display block
+			font-size 1.5rem
+			position relative
+
+			&:hover
+				text-decoration none !important	
+				
+				&:after
+					background-color $AzulOscuro
+					content ""
+					height 0.2rem
+					left 0% 
+					position absolute 
+					right 0 
+					bottom 0
+					width 12%
+			
+	.active
+		pointer-events none
+		a
+			&:after
+				background-color $AzulOscuro
+				content ""
+				height 0.2rem
+				left 0% 
+				position absolute 
+				right 0 
+				bottom 0
+				width 12%
+				
+
 
 .medida
 	path("bg-medida.jpg")
