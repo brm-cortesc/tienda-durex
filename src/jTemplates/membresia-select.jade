@@ -23,11 +23,15 @@ block content
 
 				img.img-responsive(src="images/membresia-plata.png")
 				
-				p.membresia-desc 6 Condones
+				p.membresia-desc
+					<span class="cantidad" data-base="6">6</span> Condones
 
 				div.membresia-condones
 
 					h3 Selecciona los condones y cantidades
+
+					p.bg-danger.hidden.
+						Solo puedes seleccionar hasta <span> </span> condones con este plan
 
 					div.condones
 					
@@ -35,7 +39,7 @@ block content
 							div.condon
 								img(src="images/condon.png")
 								//- span.badge #{x}
-								input.cantidad-condon(type="text", value="#{x}")
+								input.cantidad-condon(type="text",maxlength="1" placeholder="0", value="" )
 
 			///-Plata
 
@@ -49,12 +53,16 @@ block content
 
 				img.img-responsive(src="images/membresia-oro.png")
 				
-				p.membresia-desc 8 Condones
+				p.membresia-desc.
+					<span class="cantidad" data-base="8">8</span> Condones
 				p.membresia-desc 1 Lubricante
 
-				div.membresia-condones.hidden
+				div.membresia-condones
 
 					h3 Selecciona los condones y cantidades
+
+					p.bg-danger.hidden.
+						Solo puedes seleccionar hasta <span> </span> condones con este plan
 
 					div.condones
 					
@@ -62,7 +70,7 @@ block content
 							div.condon
 								img(src="images/condon.png")
 								//- span.badge #{y}
-								input.cantidad-condon(type="text", value="#{y}")
+								input.cantidad-condon(type="text",maxlength="1" placeholder="0", value="")
 
 			///-Oro
 
@@ -75,12 +83,16 @@ block content
 
 				img.img-responsive(src="images/membresia-rodio.png")
 				
-				p.membresia-desc 16 Condones
+				p.membresia-desc.
+					<span class="cantidad" data-base="16">16</span> Condones
 				p.membresia-desc 2 Lubricantes
 
-				div.membresia-condones.hidden
+				div.membresia-condones
 
 					h3 Selecciona los condones y cantidades
+
+					p.bg-danger.hidden.
+						Solo puedes seleccionar hasta <span> </span> condones con este plan
 
 					div.condones					
 
@@ -88,7 +100,7 @@ block content
 							div.condon
 								img(src="images/condon.png")
 								//- span.badge #{z}
-								input.cantidad-condon(type="text", value="#{z}")
+								input.cantidad-condon(type="text",maxlength="2" placeholder="0", value="")
 
 			///-Rodio
 
@@ -101,13 +113,17 @@ block content
 
 				img.img-responsive(src="images/membresia-diamante.png")
 				
-				p.membresia-desc 16 Condones
+				p.membresia-desc.
+					<span class="cantidad" data-base="16">16</span> Condones
 				p.membresia-desc 2 Lubricantes
 				p.membresia-desc 1 Anillo
 
-				div.membresia-condones.hidden
+				div.membresia-condones
 
 					h3 Selecciona los condones y cantidades
+
+					p.bg-danger.hidden.
+						Solo puedes seleccionar hasta <span> </span> condones con este plan
 
 					div.condones
 
@@ -115,7 +131,7 @@ block content
 							div.condon
 								img(src="images/condon.png")
 								//- span.badge #{a}
-								input.cantidad-condon(type="text", value="#{a}")
+								input.cantidad-condon(type="text",maxlength="2" placeholder="0", value="")
 			///-Diamante
 		
 	section.container-fluid.no-border.azul-oscuro

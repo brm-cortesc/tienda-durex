@@ -2,6 +2,7 @@
 	cursor pointer
 	min-height 60rem
 	padding 0.5rem 2rem !important
+	transitionBase(0.3s)
 	
 	&:hover
 		background-color $Gris
@@ -81,6 +82,19 @@
 				text-align center
 				vertical-align baseline
 				white-space nowrap
+				
+				&::-webkit-input-placeholder
+					color #fff
+					
+				&::-moz-placeholder
+					color #fff
+					
+				&::-moz-placeholder 
+					color #fff
+					
+				&:-ms-input-placeholder
+					color #fff
+
 
 		.condones
 			display block
@@ -105,7 +119,7 @@
 		text-align center
 		
 
-	&-select
+	&-active
 		background-color $Gris
 		box-shadow 3px 3px 4px 4px rgba(0,0,0,0.15)
 		

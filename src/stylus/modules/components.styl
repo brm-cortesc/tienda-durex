@@ -180,7 +180,7 @@
 	background-repeat no-repeat
 	
 
-.producto
+.producto-cart
 	border-bottom 2px solid transparent
 	border-top @border-bottom
 	margin-bottom 3rem
@@ -206,10 +206,17 @@
 			color $AzulOscuro
 			font-size 2.4rem
 			margin-top 3rem
+			position relative
 			
 			&:before
+				background-color $AzulOscuro
+				content ""
+				height 0.1rem
 				left 0
+				position absolute 
+				right 0 
 				top -0.7rem
+				width 10% 
 				
 		.remove
 			color #000
@@ -246,16 +253,15 @@
 			display block
 			left 0
 			position absolute
-			top 25%
+			top 10%
 			
 		&:active, &:focus
-			color $AzulOscuro
 			box-shadow none !important
 			outline 0 !important
 			outline none !important
 			
 			&:before
-				background-color $AzulOscuro
+				background-color $Verde
 
 	
 	.info, .producto

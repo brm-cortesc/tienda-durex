@@ -1,7 +1,6 @@
  var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 	screenWidth = $(window).width();
 
-
 jQuery(document).ready(function($) {
 	
 	/*paneles de seccion "micuenta"*/
@@ -66,4 +65,67 @@ jQuery(document).ready(function($) {
 
 	/* play/pause estado de suscripcion*/
 
+	/*Quitar item del carrito*/
+	$('.remove').click(function(){+
+	   $(this).parent().parent().remove();
+
+	});
+	/*Quitar item del carrito*/
+
+	/*Seleccion de membresia*/
+	$('.membresia').click(function() {
+		
+		$('.membresia').removeClass('membresia-active');
+		$(this).addClass('membresia-active');
+		
+		// if (  $(window).scrollTop() == 0 ) {
+		// 	$('html,body').animate({scrollTop:$(window).scrollTop()+580+'px'},1000);
+		// };
+
+	});
+	/*Seleccion de membresia*/
+
+
+
 });
+
+/*contador cantidad de condones membresia*/
+
+$(document).on('change', '.membresia-active .cantidad-condon', function () {
+
+	var baseCondones = $('.membresia-active .cantidad'),
+		inputCantidad = $('.membresia-active .cantidad-condon'),
+		inputVal = baseCondones.attr('data-base'),
+		restaCondones = baseCondones.text();
+
+		$('.membresia-active .bg-danger span').text(inputVal);
+
+		$('.membresia-active .cantidad-condon').each(function() {
+			
+			inputVal -=  + $(this).val();
+
+		});
+
+
+		if ( inputVal < 0  ){
+
+			console.log('me pasé');
+			inputVal = 0;
+			baseCondones.text(inputVal);
+
+			$('.membresia-active .bg-danger').removeClass('hidden');
+
+			$('.btn-go-checkout').addClass('disabled');
+
+		}else{
+
+			baseCondones.text(inputVal);
+			$('.membresia-active .bg-danger').addClass('hidden');
+
+			$('.btn-go-checkout').removeClass('disabled');
+		};
+
+
+});
+/*contador cantidad de condones membresia*/
+
