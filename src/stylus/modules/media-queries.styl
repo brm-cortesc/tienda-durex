@@ -222,7 +222,18 @@
 		.img-responsive
 			display block
 			margin 0 auto
-		
+	
+
+	.lista-legales
+		margin 0 auto 3rem
+		width 100%
+		li
+			display inline-block
+			margin-left 0.5rem	
+			margin-right @margin-left
+			
+			a
+				font-size 1.2rem
 
 	.membresia
 		.half, .img-responsive
@@ -374,7 +385,19 @@
 	.comprar
 		margin-top 0
 		.cantidad
-			max-width 5rem		
+			max-width 5rem	
+			
+	.lista-legales
+		li
+			margin-left 0.5rem	
+			margin-right @margin-left
+			text-align center
+			vertical-align top
+			width 29%
+			
+			a
+				&:after
+					left 44% !important
 
 	.producto
 		margin-bottom 4rem
@@ -417,12 +440,17 @@
 		.btn
 			font-size 1rem !important
 	
+
+	.lista-legales
+		li
+			width 25%
+			
+			a
+				font-size 0.8rem
+
 	.navbar-toggle
 		cuadrado(6rem)
-
-	// .producto-cart
-	// 	.img-responsive
-			
+		
 
 	.row-recomendados
 		margin-top 11rem
