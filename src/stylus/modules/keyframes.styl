@@ -1,30 +1,32 @@
-@keyframes destellos
-	from
-		background-position 0 0
-		
-	to
-		background-position -10000px 7000px
-		
-
-
-@keyframes smoke
-	from
-		background-positio 0 0
-		opacity 0.9
-		transform scale(1) skewX(0deg)
-		
-	to
-		background-positio -900px 0
-		opacity 0.3
-		transform scale(0.98) skewX(2deg)
-		
-
-@keyframes spot
-	from
-		opacity 1
-		transform scale(1)
-		
-	to 
+@keyframes burguer
+	0%
 		opacity 0
-		transform scale(2)
+		fill transparent
+		stroke #fff
+		stroke-dasharray  1000
+		stroke-dashoffset  1000
+		stroke-width 0.2rem
 		
+	19.9%
+		opacity 1
+		
+	20%
+		fill transparent
+		stroke #fff
+		stroke-dasharray  1000
+		stroke-dashoffset  1000
+		stroke-width 0.2rem
+
+	88%
+		fill transparent
+		stroke-dasharray  1000
+		stroke-dashoffset 0
+		stroke #fff
+		stroke-width 0.2rem
+			
+	100%
+		stroke-dashoffset 0
+		stroke-width 0
+		stroke transparent
+		fill #fff
+		opacity 1

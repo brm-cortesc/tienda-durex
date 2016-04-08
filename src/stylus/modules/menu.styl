@@ -35,3 +35,22 @@
 				
 				&:active, &:hover, &:focus
 					background-color transparent !important
+					
+
+	&bar-toggle
+		border 0
+		cuadrado(10rem)
+		
+		svg
+			transitionBase(0.3s)
+			path
+				// animation burguer 1s ease-in-out normal 1 forwards
+				transitionBase(0.3s)
+		
+		&:active, &:focus, &:hover
+			background-color transparent !important
+			
+
+			svg
+				path
+					fill $AzulOscuro

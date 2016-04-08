@@ -80,7 +80,7 @@ jQuery(document).ready(function($) {
 	/*Seleccion de membresia*/
 
 	/* Mostrar/ocultar mini login */
-	$('.perfil a').click(function(event) {
+	$('.perfil').click(function(event) {
 		event.preventDefault();
 
 		$('.mini-login').toggleClass('animated bounceInDown hidden');
@@ -91,7 +91,7 @@ jQuery(document).ready(function($) {
 	});
 	/* Mostrar/ocultar mini login */
 	/* Mostrar/ocultar mini cart */
-	$('.status-cart a').click(function(event) {
+	$('.status-cart').click(function(event) {
 		event.preventDefault();
 
 		$('.mini-login').addClass('hidden');
@@ -109,7 +109,6 @@ jQuery(document).ready(function($) {
 			$('.mini-login, .mini-cart').removeClass('animated bounceInDown');
 
 		};
-		event.stopPropagation();
 
 	});
 	/* Mostrar/ocultar mini cart */

@@ -18,3 +18,143 @@
 @media (max-width: 960px)
 	.bg-categorias
 		background-size cover
+
+
+@media (max-width: 880px)
+
+	header
+		.mini-login, .mini-cart
+			right 0
+			width 24.5rem
+
+	footer
+		.logo
+			top -3rem
+			
+
+	.carousel
+		&-caption			
+			h2
+				font-size 3rem
+				
+			.descripcion
+				font-size 1.6rem
+			
+	.categoria
+		background-size 400%
+		cuadrado(18rem)
+		
+		&:hover
+			transform none
+		
+
+		&-lubricantes
+			background-position -362px top
+			
+
+		&-kits
+			background-position -187px top
+			
+	
+	
+	.navbar
+		position relative
+		
+		&-collapse
+			overflow hidden
+			margin 1rem auto
+			text-align center
+			transform translate3d(-50%,9%,0)
+			width 200%
+			
+			ul
+				li
+					margin 1rem
+		
+
+	.user-tools
+
+		.perfil a, .status-cart a
+			display none !important
+		
+		.perfil, .status-cart
+			cursor pointer
+			
+			.icon
+				font-size 1.9rem
+				
+
+@media (max-width: 760px)
+
+
+	
+	footer
+		.logo
+			display none
+
+	.carousel
+		
+		.btn
+			bottom -2rem
+			margin 0 auto
+			max-width inherit
+			position absolute
+			width 90%
+		
+		.item 
+			.img-banner
+				max-width 150%
+
+		&-caption
+			top 0
+			width 90%
+			.txt
+				width 100%
+
+
+@media (max-width: 640px)
+	.carousel
+		
+		.item 
+			.img-banner
+				max-width 180%
+				
+
+
+@media (max-width: 580px)
+	.carousel
+		
+		.btn
+			width 100%
+		
+		.item 
+			.img-banner
+				max-width 200%
+
+		&-caption
+			left 5% !important
+			
+			h2
+				font-size 2.5rem
+				
+			p
+				font-size 1.4rem
+
+
+@media (max-width: 460px)
+
+	.carousel
+		
+		.item 
+			.img-banner
+				max-width 250%
+				
+
+@media (max-width: 380px)
+	.carousel
+		
+		.item 
+			.img-banner
+				margin-left -100%
+				max-width 300%
+
