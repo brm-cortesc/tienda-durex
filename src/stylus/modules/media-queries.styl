@@ -3,6 +3,12 @@
 // 		background-position 0 -23rem
 	
 
+@media (max-width: 1220px)
+	.producto-cart
+		.img-responsive
+			width 30%
+
+
 @media (max-width: 1170px)
 	
 	.carousel
@@ -75,7 +81,11 @@
 		&-kits
 			background-position -187px top
 			
-	
+	.producto-cart
+		.img-responsive
+			width 40%
+		.info
+			width 55% 
 	.user-tools
 
 		.perfil a, .status-cart a
@@ -130,12 +140,35 @@
 					margin 1rem
 	
 	
+	.producto-cart
+		.info
+			h3
+				font-size 1.8rem
+
 	.recomendado
 		margin-bottom 1rem
 		margin-top @margin-bottom
 
 	.row-descripcion
 		text-align left
+		
+	.row-cart
+		direction rtl
+		transform rotate(180deg)
+		
+		h1
+			display none
+		
+		
+		section
+			direction ltr
+			transform rotate(-180deg)
+			
+
+		.btn-checkout
+			display block
+			margin-top 0
+			width 100%
 
 @media (max-width: 640px)
 	
@@ -203,9 +236,7 @@
 	
 
 @media (max-width: 460px)
-
-	.navbar-toggle
-		cuadrado(6rem)
+	
 
 	.carousel
 		
@@ -220,11 +251,22 @@
 		
 		.btn
 			font-size 1rem !important
-				
+	
+	.navbar-toggle
+		cuadrado(6rem)
+
+	// .producto-cart
+	// 	.img-responsive
+			
+
 	.row-recomendados
 		margin-top 11rem
 		width 200%
 		transform translate3d(-50%,0,0)
+
+	.row-cart
+		.btn-checkout
+			margin-bottom 2rem !important
 
 @media (max-width: 380px)
 
