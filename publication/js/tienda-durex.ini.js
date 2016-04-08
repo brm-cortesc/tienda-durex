@@ -66,7 +66,7 @@ jQuery(document).ready(function($) {
 	/* play/pause estado de suscripcion*/
 
 	/*Quitar item del carrito*/
-	$('.remove').click(function(){+
+	$('.remove').click(function(){
 	   $(this).parent().parent().remove();
 
 	});
@@ -77,6 +77,9 @@ jQuery(document).ready(function($) {
 		
 		$('.membresia').removeClass('membresia-active');
 		$(this).addClass('membresia-active');
+		$('.membresia .cantidad').text( $('.membresia .cantidad').attr('data-base') );
+		$('.membresia .cantidad-condon').val('');
+		$('.membresia-active .bg-danger').addClass('hidden');
 		
 		// if (  $(window).scrollTop() == 0 ) {
 		// 	$('html,body').animate({scrollTop:$(window).scrollTop()+580+'px'},1000);
