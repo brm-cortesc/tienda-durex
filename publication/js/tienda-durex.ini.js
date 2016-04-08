@@ -148,6 +148,14 @@ jQuery(document).ready(function($) {
 	});
 
 
+	if ( screenWidth <= 768  ) {
+
+			console.log('hola')
+			$('.test-carousel').carousel();
+
+	};
+
+
 });
 
 /*contador cantidad de condones membresia*/
