@@ -65,13 +65,6 @@ jQuery(document).ready(function($) {
 
 	/* play/pause estado de suscripcion*/
 
-	/*Quitar item del carrito*/
-	$('.remove').click(function(){+
-	   $(this).parent().parent().remove();
-
-	});
-	/*Quitar item del carrito*/
-
 	/*Seleccion de membresia*/
 	$('.membresia').click(function() {
 		
@@ -85,6 +78,40 @@ jQuery(document).ready(function($) {
 	});
 	/*Seleccion de membresia*/
 
+	/* Mostrar/ocultar mini login */
+	$('.perfil a').click(function(event) {
+		event.preventDefault();
+
+		$('.mini-login').toggleClass('animated bounceInDown hidden');
+		$('.mini-cart').addClass('hidden');
+		$('.mini-cart').removeClass('animated bounceInDown');
+		event.stopPropagation();
+		
+	});
+	/* Mostrar/ocultar mini login */
+	/* Mostrar/ocultar mini cart */
+	$('.status-cart a').click(function(event) {
+		event.preventDefault();
+
+		$('.mini-login').addClass('hidden');
+		$('.mini-login').removeClass('animated bounceInDown');
+		$('.mini-cart').toggleClass('animated bounceInDown hidden');
+
+		event.stopPropagation();
+		
+	});
+	$('body').click(function(event) {
+		
+		if ( !$(event.target).is('.mini-login *, .mini-cart *')  ) {
+
+			$('.mini-login, .mini-cart').addClass('hidden');
+			$('.mini-login, .mini-cart').removeClass('animated bounceInDown');
+
+		};
+		event.stopPropagation();
+
+	});
+	/* Mostrar/ocultar mini cart */
 
 
 });
@@ -128,4 +155,8 @@ $(document).on('change', '.membresia-active .cantidad-condon', function () {
 
 });
 /*contador cantidad de condones membresia*/
+
+
+	
+
 
