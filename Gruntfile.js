@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 				stripBanners: true
 			},
 			dist: {
-				src: ['publication/js/libs/jquery.js', 'publication/js/libs/bootstrap.min.js', 'publication/js/libs/jquery.validate.js'],
+				src: ['publication/js/libs/jquery.js', 'publication/js/libs/bootstrap.min.js', 'publication/js/libs/jquery.bxslider.min.js', 'publication/js/libs/jquery.validate.js'],
 				dest: 'publication/js/concat.<%= pkg.name %>.js'
 			},
 		},
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
 					 options: {
 							 pretty: true,
 							 data:{
-							 	debug: true //Variable para compilar html con archivos de JS y CSS comprimidos si es false exporta cada archivo, si es true exporta con el link del archivo compilado 
+							 	debug: false //Variable para compilar html con archivos de JS y CSS comprimidos si es false exporta cada archivo, si es true exporta con el link del archivo compilado 
 							 }
 					 },
 					 files: [ {
