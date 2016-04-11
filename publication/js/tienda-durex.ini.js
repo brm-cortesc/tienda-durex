@@ -148,21 +148,23 @@ jQuery(document).ready(function($) {
 	});
 
 
+	/*slider de categorias para dispositivos moviles*/
 	if ( screenWidth <= 768  ) {
 
-			var sliderPart = $('.test-carousel').bxSlider({
-				  minSlides: 1,
-				  maxSlides: 1,
-				  slideWidth: 330,
-				  slideMargin: 0,
-				  moveSlides: 1,
-				  pager:false,
-				  nextText: '',
-				  prevText: ''
-				});
+		var sliderPart = $('.test-carousel').bxSlider({
+			  minSlides: 1,
+			  maxSlides: 1,
+			  slideWidth: 330,
+			  slideMargin: 0,
+			  moveSlides: 1,
+			  pager:false,
+			  nextText: '',
+			  prevText: ''
+			});
 
 
 	};
+	/*slider de categorias para dispositivos moviles*/
 
 
 });
