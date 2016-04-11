@@ -150,8 +150,17 @@ jQuery(document).ready(function($) {
 
 	if ( screenWidth <= 768  ) {
 
-			console.log('hola')
-			$('.test-carousel').carousel();
+			var sliderPart = $('.test-carousel').bxSlider({
+				  minSlides: 1,
+				  maxSlides: 1,
+				  slideWidth: 330,
+				  slideMargin: 0,
+				  moveSlides: 1,
+				  pager:false,
+				  nextText: '',
+				  prevText: ''
+				});
+
 
 	};
 
